@@ -13,6 +13,7 @@
     <meta property="og:description" content="Experience painless, elite, and world-class dental procedures under expert care at RASTOGI DENTAL CLINIC.">
     <meta property="og:image" content="https://lh3.googleusercontent.com/gps-cs-s/APNQkAGZGQ_kQpKznaf4h0xnRwEYcHFlfhJvvwIdU-SkdOEA0jmxzVYen5G1r45pdayfPGhpIEprGXFqUJgnGtQ_iFOHBly5mNyJf6u0SGQlBCUI-awYOXu3ouE5qE4ZStQ0IcCXO7n1KPb_eBGF=s1360-w1360-h1020-rw">
     <meta property="og:type" content="website">
+     <!--favicon-->
 
     <!-- Tailwind Play Framework -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -115,7 +116,7 @@
         }
         .hero-slide.active {
             opacity: 1;
-            animation: pan-zoom 15s infinite alternate;
+            /* animation: pan-zoom 15s infinite alternate; */
         }
         @keyframes pan-zoom {
             from { transform: scale(1); }
@@ -278,6 +279,109 @@
             transform: translateY(0);
             opacity: 1;
         }
+        /* 3D Tooth Section */
+
+.tooth-3d-section{
+    width:100%;
+    min-height:70vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px 0;
+    background:linear-gradient(
+        135deg,
+        #f8fdff 0%,
+        #eefcff 50%,
+        #f4fffc 100%
+    );
+}
+
+.tooth-3d-container{
+    width:80vw;
+    height:70vh;
+    max-width:1400px;
+    border-radius:24px;
+    overflow:hidden;
+    box-shadow:
+        0 20px 60px rgba(0,0,0,.12),
+        0 0 40px rgba(0,180,255,.08);
+}
+
+.tooth-3d-container iframe{
+    width:100%;
+    height:100%;
+    border:none;
+    display:block;
+}
+.video-showcase{
+    padding:100px 20px;
+    background:#f8fcff;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.video-header{
+    max-width:800px;
+    margin:0 auto 50px;
+}
+
+.video-header .section-tag{
+    display:inline-block;
+    background:#e6f7f3;
+    color:#00a86b;
+    padding:8px 18px;
+    border-radius:50px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+.video-header h2{
+    font-size:clamp(2rem,4vw,3.5rem);
+    font-weight:800;
+    color:#0f4c81;
+    margin-bottom:15px;
+}
+
+.video-header p{
+    font-size:1.1rem;
+    color:#64748b;
+    line-height:1.8;
+}
+
+.video-wrapper{
+    width:min(80vw,450px);
+    height:70vh;
+    border-radius:30px;
+    overflow:hidden;
+    box-shadow:0 25px 60px rgba(0,0,0,.15);
+    margin:auto;
+}
+
+.video-wrapper video{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+@media(max-width:768px){
+    .video-wrapper{
+        width:90vw;
+        height:60vh;
+    }
+}
+
+/* Disable completely on mobile */
+
+@media (max-width: 768px){
+
+    .tooth-3d-section{
+        display:none !important;
+    }
+
+}
     </style>
 </head>
 <body class="text-slate-700 antialiased relative">
@@ -301,7 +405,7 @@
 
     <!-- Emergency Ribbon -->
     <div class="bg-emerald-700 text-white text-[10px] sm:text-xs md:text-sm py-2.5 px-4 text-center relative z-50 font-extrabold tracking-widest uppercase shadow-md flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 border-b border-emerald-800">
-        <div class="flex items-center"><i class="fa-solid fa-truck-medical mr-2 animate-pulse"></i></div>
+        <!-- <div class="flex items-center"><i class="fa-solid fa-truck-medical mr-2 animate-pulse"></i></div> -->
         <div>Varanasi: <a href="tel:+917080853206" class="hover:underline">7080853206</a> | Chunar: <a href="tel:+919839913206" class="hover:underline">9839913206</a></div>
     </div>
 
@@ -311,8 +415,8 @@
             
             <!-- Logo Block -->
             <a href="#" class="flex flex-nowrap items-center gap-2 sm:gap-3 group z-50 decoration-none outline-none focus:ring-2 focus:ring-sky-400 rounded-xl p-1">
-                <img src="images/1.png" alt="RASTOGI DENTAL CLINIC Logo" class="h-7 w-7 sm:h-8 sm:w-8 md:h-10 md:w-10 rounded-xl shadow border border-blue-400/30 object-cover shrink-0 transition-transform group-hover:scale-105">
-                <span class="text-[11px] sm:text-[13px] md:text-lg lg:text-xl font-serif font-black tracking-widest text-white uppercase whitespace-nowrap transition-colors duration-300 group-hover:text-sky-200">
+                <img src="images/logoo.png" alt="RASTOGI DENTAL CLINIC Logo" class="h-7 w-7 sm:h-8 sm:w-8 md:h-10 md:w-10 rounded-xl shadow border border-blue-400/30 object-cover shrink-0 transition-transform group-hover:scale-105">
+                <span class="text-[14px] sm:text-[13px] md:text-lg lg:text-xl font-black tracking-widest text-white uppercase whitespace-nowrap transition-colors duration-300 group-hover:text-sky-200">
                     RASTOGI DENTAL CLINIC
                 </span>
             </a>
@@ -418,7 +522,7 @@
             </svg>
         </div>
     </section>
-
+    
     <!-- Statistics Counter Grid Section -->
     <div class="relative z-20 pb-16">
         <div class="container mx-auto px-4 lg:px-8 -mt-24 sm:-mt-28 md:-mt-36 reveal">
@@ -454,7 +558,23 @@
             </div>
         </div>
     </div>
-
+    <section class="tooth-3d-section">
+    <div class="tooth-3d-container">
+        <iframe
+            title="Tooth cross-section"
+            frameborder="0"
+            allowfullscreen
+            mozallowfullscreen="true"
+            webkitallowfullscreen="true"
+            allow="autoplay; fullscreen; xr-spatial-tracking"
+            xr-spatial-tracking
+            execution-while-out-of-viewport
+            execution-while-not-rendered
+            web-share
+            src="https://sketchfab.com/models/9cc281349c314cc4859e26af238f9cd5/embed?autostart=1&ui_infos=0&ui_controls=1&ui_stop=0">
+        </iframe>
+    </div>
+</section>
     <!-- Treatments Grid Section -->
     <section id="treatments" class="py-16 md:py-24 relative overflow-hidden">
         <div class="container mx-auto px-4 lg:px-8 relative z-10">
@@ -697,7 +817,25 @@
             </div>
         </div>
     </section>
+    <section class="video-showcase">
+    
+    <div class="video-header">
+        <span class="section-tag">Creative Works</span>
+        <h2>Some Exceptional Works</h2>
+        <p>Watch our Logo Tooth back to Life</p>
+    </div>
 
+    <div class="video-wrapper">
+        <video
+            poster="images/thumbnail.png"
+            preload="metadata"
+            controls
+            playsinline>
+            <source src="videos/video.mp4" type="video/mp4">
+        </video>
+    </div>
+
+</section>
     <!-- Why Choose Us Feature Cards -->
     <section class="py-16 md:py-24 relative overflow-hidden">
         <div class="container mx-auto px-4 lg:px-8 relative z-10">
@@ -723,7 +861,7 @@
                 <!-- Values -->
                 <div class="glass-card p-6 sm:p-8 rounded-3xl card-hover reveal relative z-10">
                     <div class="w-12 h-12 bg-green-100 text-green-600 rounded-xl flex items-center justify-center text-xl mb-4 sm:mb-5 shadow-sm"><i class="fa-solid fa-heart-pulse"></i></div>
-                    <h4 class="text-lg font-extrabold text-slate-900 mb-2 sm:mb-3">Hospital Values</h4>
+                    <h4 class="text-lg font-extrabold text-slate-900 mb-2 sm:mb-3">Values</h4>
                     <p class="text-slate-700 font-medium text-xs sm:text-sm leading-relaxed">Patient-first prioritization, absolute operational transparency, total precision, and empathetic healthcare execution.</p>
                 </div>
                 <!-- Hygiene -->
@@ -778,7 +916,7 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 reveal">
                 <!-- Video 1 (Instagram) -->
                 <div class="bg-white rounded-2xl overflow-hidden shadow-2xl aspect-[9/16] relative border border-emerald-700/50 w-full relative z-10">
-                    <iframe src="https://www.instagram.com/p/DYzYM09J5Dh/embed" class="w-full h-full border-0 absolute inset-0 bg-white" allowtransparency="true" allow="encrypted-media" scrolling="no" loading="lazy"></iframe>
+                    <iframe src="https://www.instagram.com/reel/DXgw-vXk_hx/embed" class="w-full h-full border-0 absolute inset-0 bg-white" allowtransparency="true" allow="encrypted-media" scrolling="no" loading="lazy"></iframe>
                 </div>
                 <!-- Video 2 (Instagram) -->
                 <div class="bg-white rounded-2xl overflow-hidden shadow-2xl aspect-[9/16] relative border border-emerald-700/50 w-full relative z-10">
@@ -786,11 +924,11 @@
                 </div>
                 <!-- Video 3 (Facebook Reel Direct Video Iframe) -->
                 <div class="bg-white rounded-2xl overflow-hidden shadow-2xl aspect-[9/16] relative border border-emerald-700/50 w-full relative z-10">
-                    <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1375350020435186&show_text=false" class="w-full h-full border-0 absolute inset-0 bg-white" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" loading="lazy"></iframe>
+                    <iframe src="https://www.instagram.com/reel/DYoKebEJZ7I/embed" class="w-full h-full border-0 absolute inset-0 bg-white" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" loading="lazy"></iframe>
                 </div>
                 <!-- Video 4 (Instagram) -->
                 <div class="bg-white rounded-2xl overflow-hidden shadow-2xl aspect-[9/16] relative border border-emerald-700/50 w-full relative z-10">
-                    <iframe src="https://www.instagram.com/p/DW0hBUaiRlN/embed" class="w-full h-full border-0 absolute inset-0 bg-white" allowtransparency="true" allow="encrypted-media" scrolling="no" loading="lazy"></iframe>
+                    <iframe src="https://www.instagram.com/reel/DXorOX_E9S6/embed" class="w-full h-full border-0 absolute inset-0 bg-white" allowtransparency="true" allow="encrypted-media" scrolling="no" loading="lazy"></iframe>
                 </div>
             </div>
         </div>
@@ -1032,7 +1170,7 @@
                 <!-- Branding column -->
                 <div class="sm:col-span-2 lg:col-span-1">
                     <a href="#" class="flex flex-nowrap items-center gap-2 sm:gap-3 mb-6 group w-max decoration-none outline-none focus:ring-2 focus:ring-emerald-500 rounded-xl p-1">
-                        <img src="images/1.png" alt="RASTOGI DENTAL CLINIC Footer Logo" class="h-9 w-9 sm:h-10 sm:w-10 md:h-12 md:w-12 rounded-xl shadow-lg border border-emerald-800 object-cover shrink-0 transition-transform group-hover:scale-105">
+                        <img src="images/logoo.png" alt="RASTOGI DENTAL CLINIC Footer Logo" class="h-9 w-9 sm:h-10 sm:w-10 md:h-12 md:w-12 rounded-xl shadow-lg border border-emerald-800 object-cover shrink-0 transition-transform group-hover:scale-105">
                         <span class="text-[11px] sm:text-[13px] md:text-lg lg:text-xl font-serif font-black tracking-widest text-white uppercase whitespace-nowrap transition-colors duration-300 group-hover:text-emerald-400 leading-none mt-1">
                             RASTOGI DENTAL
                         </span>
