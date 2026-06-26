@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-    <title>RASTOGI DENTAL CLINIC | Advanced Dental Care & Oral Surgery</title>
-    <meta name="description" content="RASTOGI DENTAL CLINIC offers premium dental procedures including painless Root Canal Treatments (RCT), advanced dental implants, and cosmetic smile designs. Led by certified specialists in Varanasi & Chunar.">
-    <meta name="keywords" content="RASTOGI DENTAL CLINIC, best dentist in Varanasi, top dental clinic in Chunar, Root Canal Varanasi, dental implants Chunar, cosmetic dentist, painless tooth extraction">
-    <meta name="author" content="RASTOGI DENTAL CLINIC">
+<title>Best Dental Clinic in Varanasi | Root Canal, Dental Implants & Braces | Rastogi Dental Clinic</title>    
+<meta name="description"
+content="Looking for the best dentist in Varanasi? Rastogi Dental Clinic offers painless root canal treatment, dental implants, braces, smile designing, pediatric dentistry and advanced dental care with experienced dentists.">    
+<meta name="keywords" content="Best Dental Clinic in Varanasi, Best Dentist in Varanasi, Dentist in Varanasi, Dental Clinic in Varanasi, Root Canal Treatment in Varanasi, Dental Implants in Varanasi, Braces Treatment in Varanasi, Teeth Whitening in Varanasi, Smile Designing in Varanasi, Cosmetic Dentist in Varanasi, Pediatric Dentist in Varanasi, Family Dentist in Varanasi, Painless Root Canal Varanasi, Dental Crowns and Bridges Varanasi, Orthodontist in Varanasi, Clear Aligners Varanasi, Dental Veneers Varanasi, Tooth Extraction Varanasi, Wisdom Tooth Removal Varanasi, Full Mouth Rehabilitation Varanasi, Emergency Dentist Varanasi, Oral Surgery Varanasi, Advanced Dental Care Varanasi, Rastogi Dental Clinic">    
+<meta name="author" content="RASTOGI DENTAL CLINIC">
     
     <!-- Open Graph Tags -->
     <meta property="og:title" content="RASTOGI DENTAL CLINIC | Premium Dental Care">
@@ -15,10 +16,11 @@
     <meta property="og:type" content="website">
      <!--favicon-->
     <link rel="icon" type="image/png" href="images/circle-logoo.png">
+    <link rel="canonical" href="https://rastogidentalclinicvns.com/">
     <!-- Tailwind Play Framework -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=Cinzel:wght@700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <script>
         tailwind.config = {
@@ -26,7 +28,7 @@
                 extend: {
                     fontFamily: {
                         sans: ['"Plus Jakarta Sans"', 'sans-serif'],
-                        serif: ['"Cinzel"', 'serif'],
+                        cursive: ['"Dancing Script"', 'cursive'],
                     },
                     colors: {
                         primary: '#0ea5e9',    /* Luxury Sky Blue */
@@ -53,7 +55,7 @@
         #preloader {
             position: fixed;
             top: 0; left: 0; width: 100%; height: 100%;
-            background: #0f172a;
+            background: #03022c;
             z-index: 9999;
             display: flex;
             justify-content: center;
@@ -61,8 +63,8 @@
             transition: opacity 0.5s ease;
         }
         .tooth-loader {
-            font-size: 3.5rem;
-            color: var(--primary);
+            /* font-size: 3.5rem;
+            color: var(--primary); */
             animation: pulse-tooth 1.5s infinite ease-in-out;
         }
         @keyframes pulse-tooth {
@@ -99,7 +101,7 @@
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
-        /* Hero Carousel Background dynamics */
+        /* Hero Carousel Background dynamics 
         .hero-carousel {
             position: absolute;
             top: 0; left: 0; width: 100%; height: 100%;
@@ -116,7 +118,7 @@
         }
         .hero-slide.active {
             opacity: 1;
-            /* animation: pan-zoom 15s infinite alternate; */
+             animation: pan-zoom 15s infinite alternate; 
         }
         @keyframes pan-zoom {
             from { transform: scale(1); }
@@ -126,6 +128,24 @@
             position: absolute;
             top: 0; left: 0; width: 100%; height: 100%;
             background: linear-gradient(90deg, rgba(15, 23, 42, 0.95) 0%, rgba(15, 23, 42, 0.8) 50%, rgba(15, 23, 42, 0.6) 100%);
+        }*/
+
+        /* Hero Right-Side Slider Properties */
+        .hero-carousel-right {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            overflow: hidden;
+        }
+        .hero-slide-right {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-size: cover;
+            background-position: center;
+            opacity: 0;
+            transition: opacity 1.5s ease-in-out;
+        }
+        .hero-slide-right.active {
+            opacity: 1;
         }
 
         /* Background Animated Medical Elements (Dynamic Particles) */
@@ -167,7 +187,7 @@
             box-shadow: 0 20px 40px rgba(16, 185, 129, 0.12);
         }
 
-        /* Initial Hero Entrance Animations */
+        /* Initial Hero Entrance Animations 
         @keyframes heroFadeInUp {
             from { opacity: 0; transform: translateY(30px); }
             to { opacity: 1; transform: translateY(0); }
@@ -195,7 +215,7 @@
         .delay-600 { animation-delay: 600ms; }
         .delay-800 { animation-delay: 800ms; }
 
-        /* Reveal animations on scroll */
+         Reveal animations on scroll */
         .reveal {
             opacity: 0;
             transform: translateY(35px);
@@ -279,7 +299,7 @@
             transform: translateY(0);
             opacity: 1;
         }
-        /* 3D Tooth Section */
+        /* 3D Tooth Section 
 
 .tooth-3d-section{
     width:100%;
@@ -312,7 +332,7 @@
     height:100%;
     border:none;
     display:block;
-}
+}*/
 .video-showcase{
     padding:100px 20px;
     background:#f8fcff;
@@ -321,7 +341,7 @@
     flex-direction:column;
     align-items:center;
 }
-.chair-3d-section{
+/* .chair-3d-section{
     padding:100px 20px;
     background:linear-gradient(
         135deg,
@@ -356,7 +376,7 @@
         display:none;
     }
 
-}
+} */
 .video-header{
     max-width:800px;
     margin:0 auto 50px;
@@ -419,6 +439,162 @@
 }
 
     </style>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+
+    {
+      "@type": "Dentist",
+      "@id": "https://rastogidentalclinicvns.com/#dentist",
+      "name": "Rastogi Dental Clinic",
+      "url": "https://rastogidentalclinicvns.com",
+      "image": "https://rastogidentalclinicvns.com/images/logo.png",
+      "logo": "https://rastogidentalclinicvns.com/images/logo.png",
+      "telephone": "+91-7080853206",
+      "email": "info@rastogidentalclinicvns.com",
+      "priceRange": "₹₹",
+      "description": "Rastogi Dental Clinic is a modern dental clinic in Varanasi offering painless root canal treatment, dental implants, braces, smile designing, cosmetic dentistry, pediatric dentistry and complete family dental care using advanced technology.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "YOUR COMPLETE VARANASI ADDRESS",
+        "addressLocality": "Varanasi",
+        "addressRegion": "Uttar Pradesh",
+        "postalCode": "YOUR PINCODE",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "YOUR_LATITUDE",
+        "longitude": "YOUR_LONGITUDE"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "10:00",
+          "closes": "20:00"
+        }
+      ],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Varanasi"
+        },
+        {
+          "@type": "City",
+          "name": "Bhadohi"
+        },
+        {
+          "@type": "City",
+          "name": "Mirzapur"
+        },
+        {
+          "@type": "City",
+          "name": "Mughalsarai"
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/YOUR_PAGE",
+        "https://www.instagram.com/YOUR_PAGE",
+        "https://www.youtube.com/YOUR_CHANNEL"
+      ],
+      "medicalSpecialty": "Dentistry",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Dental Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "MedicalProcedure",
+              "name": "Root Canal Treatment"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "MedicalProcedure",
+              "name": "Dental Implants"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "MedicalProcedure",
+              "name": "Dental Crowns and Bridges"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "MedicalProcedure",
+              "name": "Braces Treatment"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "MedicalProcedure",
+              "name": "Clear Aligners"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "MedicalProcedure",
+              "name": "Teeth Whitening"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "MedicalProcedure",
+              "name": "Smile Designing"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "MedicalProcedure",
+              "name": "Pediatric Dentistry"
+            }
+          }
+        ]
+      }
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://rastogidentalclinicvns.com/#organization",
+      "name": "Rastogi Dental Clinic",
+      "url": "https://rastogidentalclinicvns.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://rastogidentalclinicvns.com/images/logo.png"
+      }
+    },
+
+    {
+      "@type": "WebSite",
+      "@id": "https://rastogidentalclinicvns.com/#website",
+      "url": "https://rastogidentalclinicvns.com",
+      "name": "Rastogi Dental Clinic",
+      "publisher": {
+        "@id": "https://rastogidentalclinicvns.com/#organization"
+      },
+      "inLanguage": "en-IN"
+    }
+  ]
+}
+</script>
 </head>
 <body class="text-slate-700 antialiased relative">
 
@@ -428,8 +604,11 @@
     <!-- Preloader Overlay -->
     <div id="preloader">
         <div class="text-center">
-            <i class="fa-solid fa-tooth tooth-loader mb-6 block"></i>
-            <h2 class="text-[16px] sm:text-2xl md:text-3xl font-sans font-extrabold tracking-widest text-white uppercase px-4 whitespace-nowrap">RASTOGI DENTAL CLINIC</h2>
+            <!-- <i class="fa-solid fa-tooth tooth-loader mb-6 block"></i> -->
+             <img src="images/logoo.png" alt="RASTOGI DENTAL CLINIC Logo" class="tooth-loader mx-auto mb-6 block w-20 h-20 rounded-2xl shadow-lg border border-sky-400">
+            <!-- <h2 class="text-[16px] sm:text-2xl md:text-3xl font-sans font-extrabold tracking-widest text-white uppercase px-4 whitespace-nowrap">RASTOGI DENTAL CLINIC</h2>
+            <div class="w-16 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mt-4 rounded-full animate-pulse"></div> -->
+            <h2 class="text-2xl md:text-3xl font-sans font-extrabold tracking-widest text-white uppercase px-4 whitespace-nowrap">RASTOGI DENTAL CLINIC</h2>
             <div class="w-16 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mt-4 rounded-full animate-pulse"></div>
         </div>
     </div>
@@ -440,13 +619,13 @@
     </div> -->
 
     <!-- Emergency Ribbon -->
-    <div class="bg-emerald-700 text-white text-[10px] sm:text-xs md:text-sm py-2.5 px-4 text-center relative z-50 font-extrabold tracking-widest uppercase shadow-md flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 border-b border-emerald-800">
+    <!-- <div class="bg-emerald-700 text-white text-[10px] sm:text-xs md:text-sm py-2.5 px-4 text-center relative z-50 font-extrabold tracking-widest uppercase shadow-md flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 border-b border-emerald-800"> -->
         <!-- <div class="flex items-center"><i class="fa-solid fa-truck-medical mr-2 animate-pulse"></i></div> -->
-        <div>Varanasi: <a href="tel:+917080853206" class="hover:underline">7080853206</a> | Chunar: <a href="tel:+919839913206" class="hover:underline">9839913206</a></div>
-    </div>
+        <!-- <div>Varanasi: <a href="tel:+917080853206" class="hover:underline">7080853206</a> | Chunar: <a href="tel:+919839913206" class="hover:underline">9839913206</a></div> -->
+    <!-- </div> -->
 
     <!-- Sticky Navigation Navbar (Compact Blue Gradient) -->
-    <header class="sticky top-0 z-50 bg-sky-900 backdrop-blur-md shadow-sm transition-all duration-300 border-b border-blue-700" id="navbar">
+    <header class="sticky top-0 z-50 bg-emerald-900 backdrop-blur-md shadow-sm transition-all duration-300 border-b border-blue-700" id="navbar">
         <div class="container mx-auto px-4 lg:px-8 py-2 md:py-2.5 flex justify-between items-center">
             
             <!-- Logo Block -->
@@ -484,87 +663,299 @@
                 <a href="#testimonials" class="mobile-link text-blue-100 py-3 border-b border-blue-800/50 flex items-center justify-between">Testimonials <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
                 <a href="#faq" class="mobile-link text-blue-100 py-3 border-b border-blue-800/50 flex items-center justify-between">FAQ <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
                 <a href="#contact" class="mobile-link bg-white text-blue-900 text-center py-3 rounded-xl normal-case font-bold tracking-normal shadow-lg mt-4 text-base hover:bg-sky-50 transition-colors">
-                    Book Appointment Now
+                    Book Appointment
                 </a>
             </div>
         </div>
     </header>
 
     <!-- Hero Section (Immersive Luxury Dark Mode) -->
-    <section id="home" class="relative min-h-[90vh] flex items-center pt-24 pb-48 md:pt-32 md:pb-56 bg-dark z-10 overflow-hidden">
+    <section id="home" class="relative w-full flex flex-col lg:flex-row items-center justify-between overflow-hidden z-10 bg-[#f4fcf8]/50 min-h-screen lg:min-h-0 lg:h-[calc(100vh-64px)] pb-10 lg:pb-0">
         
-        <!-- Fully Working Auto-Slider with Dummy Images -->
-        <div class="hero-carousel">
-            <!-- Red Dummy Slide -->
-            <div class="hero-slide active" style="background-image: url('images/6.jpg');"></div>
-            <!-- Green Dummy Slide -->
-            <div class="hero-slide" style="background-image: url('images/18.png');"></div>
-            <!-- Blue Dummy Slide -->
-            <div class="hero-slide" style="background-image: url('images/11.png');"></div>
-            <!-- Purple Dummy Slide -->
-            <div class="hero-slide" style="background-image: url('images/2.webp');"></div>
-            <div class="hero-overlay"></div>
+        <!-- Left Side: Typography and Call to Actions -->
+        <!-- At <1024px it spans 100% and scales up hugely for tablets. At 1024px (lg) it perfectly constraints to 55%. -->
+        <div class="w-full lg:w-[55%] px-4 sm:px-8 md:px-12 lg:pl-12 xl:pl-20 lg:pr-12 xl:pr-20 relative z-20 flex flex-col justify-center pt-8 md:pt-16 pb-6 lg:py-0 h-full">
+            
+            <!-- ISO Certification Badge -->
+            <div class="flex items-center gap-2 mb-3 md:mb-5 lg:mb-4">
+                <div class="w-5 h-5 md:w-6 md:h-6 bg-emerald-500 text-white rounded-full flex items-center justify-center text-[9px] md:text-[11px] shadow-sm shrink-0"><i class="fa-solid fa-check"></i></div>
+                <span class="text-emerald-800 font-bold tracking-widest text-[9px] sm:text-[10px] md:text-xs uppercase">An ISO 9001:2015 Certified Institution</span>
+            </div>
+            
+            <!-- Main Replica Heading (Scaled up massively for tablet view, safely sized for desktop) -->
+            <h1 class="text-[2.75rem] leading-[1.05] sm:text-5xl md:text-[4.5rem] lg:text-[3.25rem] xl:text-[4.25rem] font-sans font-extrabold mb-3 md:mb-5 lg:mb-4 tracking-tight">
+                <span class="font-cursive text-emerald-500 font-bold text-[3.5rem] sm:text-[4rem] md:text-[6rem] lg:text-[4.5rem] xl:text-[5.5rem] leading-none">Healthy</span> <span class="text-slate-900">TEETH,</span><br>
+                <span class="text-slate-900">HEALTHY</span> <span class="font-cursive text-emerald-500 font-bold text-[3.5rem] sm:text-[4rem] md:text-[6rem] lg:text-[4.5rem] xl:text-[5.5rem] leading-none">You.</span>
+            </h1>
+            
+            <!-- Divider & Subheading -->
+            <div class="flex items-center gap-3 mb-3 md:mb-5 lg:mb-4">
+                <div class="w-10 h-1 md:w-16 md:h-1.5 lg:w-10 lg:h-1 bg-emerald-500 rounded-full shrink-0"></div>
+                <span class="text-slate-800 font-bold tracking-[0.15em] sm:tracking-[0.2em] md:tracking-[0.25em] text-[9px] sm:text-xs md:text-sm lg:text-xs uppercase">Creating Confident Smiles</span>
+            </div>
+            
+            <!-- Description Paragraph (Wider max-width on tablet for full utilization) -->
+            <p class="text-slate-600 font-medium text-xs sm:text-sm md:text-base lg:text-sm xl:text-base leading-relaxed max-w-md md:max-w-2xl lg:max-w-md xl:max-w-lg mb-5 md:mb-8 lg:mb-6">
+                Rastogi Dental Clinic is dedicated to providing specialized dental care with a strong focus on patient comfort, advanced treatment, and long-term oral health.
+            </p>
+            
+            <!-- Concentric Circle Stats Row -->
+            <div class="flex flex-wrap items-center gap-4 sm:gap-8 md:gap-12 lg:gap-8 mb-6 md:mb-10 lg:mb-8">
+                <!-- Stat 1 -->
+                <div class="flex items-center gap-2.5 md:gap-4 lg:gap-2.5">
+                    <div class="w-10 h-10 md:w-14 md:h-14 lg:w-10 lg:h-10 rounded-full border-[2px] border-emerald-500 flex items-center justify-center p-0.5 md:p-1 lg:p-0.5 shadow-md bg-white/50 shrink-0">
+                        <div class="w-full h-full bg-emerald-500 text-white rounded-full flex items-center justify-center text-sm md:text-lg lg:text-sm"><i class="fa-solid fa-award"></i></div>
+                    </div>
+                    <div>
+                        <h4 class="text-xl md:text-3xl lg:text-xl font-extrabold text-emerald-600 leading-none">17+</h4>
+                        <p class="text-[9px] md:text-xs lg:text-[9px] font-bold text-slate-500 tracking-wider uppercase mt-1 md:mt-1.5 lg:mt-1">Years Experience</p>
+                    </div>
+                </div>
+                <!-- Stat 2 -->
+                <div class="flex items-center gap-2.5 md:gap-4 lg:gap-2.5">
+                    <div class="w-10 h-10 md:w-14 md:h-14 lg:w-10 lg:h-10 rounded-full border-[2px] border-emerald-500 flex items-center justify-center p-0.5 md:p-1 lg:p-0.5 shadow-md bg-white/50 shrink-0">
+                        <div class="w-full h-full bg-emerald-500 text-white rounded-full flex items-center justify-center text-sm md:text-lg lg:text-sm"><i class="fa-solid fa-face-smile"></i></div>
+                    </div>
+                    <div>
+                        <h4 class="text-xl md:text-3xl lg:text-xl font-extrabold text-emerald-600 leading-none">100%</h4>
+                        <p class="text-[9px] md:text-xs lg:text-[9px] font-bold text-slate-500 tracking-wider uppercase mt-1 md:mt-1.5 lg:mt-1">Happy Patients</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Book Appointment Action Pill -->
+<!-- Book Appointment Action Pill -->
+<div class="flex flex-wrap gap-3 mb-5 md:mb-8 lg:mb-6">
+    <a href="#contact" class="bg-gradient-to-r from-emerald-600 to-green-500 text-white px-2 py-2 md:px-2.5 md:py-2.5 lg:px-2.5 lg:py-2 rounded-full flex items-center shadow-[0_10px_20px_rgba(16,185,129,0.3)] hover:scale-105 transition-transform duration-300 w-max border border-emerald-400">
+        <span class="font-bold pl-5 pr-4 md:pl-7 md:pr-5 lg:pl-6 lg:pr-4 text-xs sm:text-sm md:text-base lg:text-[15px] tracking-wide">
+            Book Appointment
+        </span>
+        <div class="w-8 h-8 md:w-11 md:h-11 lg:w-9 lg:h-9 bg-white text-emerald-600 rounded-full flex items-center justify-center text-xs md:text-sm lg:text-xs shadow-sm shrink-0">
+            <i class="fa-solid fa-arrow-right"></i>
+        </div>
+    </a>
+</div>
+
+<!-- Side-by-Side Call Branch Cards -->
+<div class="flex flex-col sm:flex-row md:gap-6 lg:gap-4 flex-wrap gap-3">
+
+    <a href="tel:+917080853206" class="bg-white/90 backdrop-blur-sm px-4 py-2.5 md:px-5 md:py-4 lg:px-4 lg:py-3 rounded-2xl flex items-center gap-3 shadow-xl border border-slate-100/50 hover:-translate-y-1 transition-transform w-full sm:w-auto md:flex-1 lg:flex-none">
+        <div class="w-8 h-8 md:w-12 md:h-12 lg:w-9 lg:h-9 rounded-full bg-emerald-50/50 flex items-center justify-center shrink-0">
+            <i class="fa-solid fa-phone text-emerald-500 text-sm md:text-lg lg:text-sm"></i>
+        </div>
+        <div>
+            <p class="text-[8px] sm:text-[9px] md:text-[11px] lg:text-[9px] text-slate-500 font-bold uppercase tracking-wider">
+                Call Varanasi Branch
+            </p>
+            <p class="font-extrabold text-slate-800 text-xs sm:text-sm md:text-lg lg:text-base mt-0.5">
+                 70808 53206
+            </p>
+        </div>
+    </a>
+
+    <a href="tel:+919839913206" class="bg-white/90 backdrop-blur-sm px-4 py-2.5 md:px-5 md:py-4 lg:px-4 lg:py-3 rounded-2xl flex items-center gap-3 shadow-xl border border-slate-100/50 hover:-translate-y-1 transition-transform w-full sm:w-auto md:flex-1 lg:flex-none">
+        <div class="w-8 h-8 md:w-13 md:h-13 lg:w-9 lg:h-9 rounded-full bg-emerald-50/50 flex items-center justify-center shrink-0">
+            <i class="fa-solid fa-phone text-emerald-500 text-sm md:text-lg lg:text-sm"></i>
+        </div>
+        <div>
+            <p class="text-[8px] sm:text-[9px] md:text-[11px] lg:text-[9px] text-slate-500 font-bold uppercase tracking-wider">
+                Call Chunar Branch
+            </p>
+            <p class="font-extrabold text-slate-800 text-xs sm:text-sm md:text-lg lg:text-base mt-0.5">
+                 98399 13206
+            </p>
+        </div>
+    </a>
+
+</div>
         </div>
 
-        <div class="container mx-auto px-4 lg:px-8 relative z-10 text-white">
-            <div class="max-w-4xl relative z-10">
-                <div class="hero-anim-up inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-secondary/40 text-secondary bg-secondary/10 backdrop-blur-md text-[10px] sm:text-xs font-bold tracking-widest uppercase mb-6 shadow-lg shadow-secondary/10">
-                    <i class="fa-solid fa-certificate"></i> AN ISO 9001:2015 CERTIFIED INSTITUTION
+        <!-- Right Side: Locked Image Slider & Floating Overlay Elements -->
+        <!-- The container strictly controls height via viewport relative vh units on mobile/tablet to look perfect -->
+        <div class="w-full lg:w-[45%] h-[50vh] min-h-[400px] max-h-[600px] md:h-[60vh] md:max-h-[700px] lg:h-full lg:max-h-none relative z-10 flex-shrink-0 mt-12 md:mt-20 lg:mt-0">
+            
+            <!-- The Rigid Curved Container ensuring photos don't bleed out. Curve adapts perfectly to screen size. -->
+            <div class="absolute right-0 top-0 w-full lg:w-[110%] xl:w-[125%] h-full overflow-hidden rounded-t-[3rem] md:rounded-t-[5rem] lg:rounded-t-none lg:rounded-l-[6rem] xl:rounded-l-[8rem] shadow-[-20px_0_40px_rgba(16,185,129,0.1)] border-t-4 md:border-t-8 lg:border-t-0 lg:border-l-[6px] border-white/60">
+                <div class="hero-carousel-right h-full w-full relative bg-emerald-50">
+                    <div class="hero-slide-right active absolute inset-0 bg-cover bg-center transition-opacity duration-[1.5s] ease-in-out opacity-100" style="background-image: url('images/6.png');"></div>
+                    <div class="hero-slide-right absolute inset-0 bg-cover bg-center transition-opacity duration-[1.5s] ease-in-out opacity-0" style="background-image: url('images/2.png');"></div>
+                    <div class="hero-slide-right absolute inset-0 bg-cover bg-center transition-opacity duration-[1.5s] ease-in-out opacity-0" style="background-image: url('images/11.png');"></div>
+                    <div class="hero-slide-right absolute inset-0 bg-cover bg-center transition-opacity duration-[1.5s] ease-in-out opacity-0" style="background-image: url('images/4.webp');"></div>
                 </div>
-                
-                <!-- Updated Modern Font Heading -->
-                <h1 class="hero-anim-left delay-200 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-sans font-extrabold leading-tight sm:leading-tight md:leading-tight mb-4 tracking-tighter">
-                    Healthy TEETH,<br> <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-green-300 to-teal-400">Healthy YOU.</span>
-                </h1>
-                
-                <h2 class="hero-anim-right delay-400 text-lg sm:text-xl md:text-2xl font-medium text-slate-200 mb-8 tracking-wide border-l-4 border-secondary pl-4 uppercase font-sans leading-snug">
-                    Creating Confident Smiles
-                </h2>
-                
-                <div class="hero-anim-scale delay-600 glass-dark p-5 sm:p-8 rounded-2xl sm:rounded-3xl mb-8 text-slate-300 leading-relaxed text-sm md:text-base shadow-2xl border border-white/10 relative z-10">
-                    <p class="font-bold text-white mb-4 flex flex-col sm:flex-row flex-wrap gap-x-6 gap-y-3 text-emerald-400 text-xs md:text-sm tracking-wider uppercase">
-                        <span><i class="fa-solid fa-history text-secondary mr-2"></i> 17 YEARS EXPERIENCE</span>
-                        <span><i class="fa-solid fa-face-smile text-secondary mr-2"></i> 100% HAPPY PATIENTS</span>
-                    </p>
-                    <p class="mb-4">
-                        <strong class="text-white uppercase font-sans font-bold tracking-widest text-[10px] sm:text-[11px]">RASTOGI DENTAL CLINIC</strong> is dedicated to providing specialized dental care with a strong focus on patient comfort, advanced treatment, and long-term oral health. The clinic offers expert care for dental trauma, bleeding gums, and a wide range of dental concerns.
-                    </p>
-                    
-                </div>
+            </div>
+            
+            <!-- Circular Spinning Badge Overlapping the Curve -->
+            <!-- Centered exactly at top seam on Mobile, Pinned to Left Curve Edge on Desktop -->
+            <div class="absolute left-1/2 lg:left-0 lg:-translate-x-[89%] top-0 lg:top-[1%] transform -translate-x-1/2 -translate-y-1/2 lg:translate-y-0 w-24 h-24 sm:w-32 sm:h-32 lg:w-36 lg:h-36 bg-white/90 backdrop-blur-md rounded-full flex items-center justify-center shadow-[0_10px_30px_rgba(0,0,0,0.15)] border-4 border-white z-30">
+                <div class="absolute inset-1.5 border border-dashed border-emerald-400 rounded-full animate-[spin_20s_linear_infinite]"></div>
+                <!-- Precision Circular Text using SVG -->
+                <svg viewBox="0 0 100 100" class="absolute w-[90%] h-[90%] animate-[spin_25s_linear_infinite]">
+                    <path id="circlePath" d="M 50, 50 m -34, 0 a 34,34 0 1,1 68,0 a 34,34 0 1,1 -68,0" fill="transparent" />
+                    <text font-size="9.5" font-weight="900" fill="#059669" letter-spacing="2.5" class="font-sans uppercase">
+                        <textPath href="#circlePath" startOffset="5%">Professional Dental Care</textPath>
+                    </text>
+                </svg>
+                <i class="fa-solid fa-tooth text-emerald-500 text-2xl sm:text-3xl shadow-sm drop-shadow-md"></i>
+            </div>
+            
+            <!-- 4-Grid Features Rectangular Hover Card (Responsive 2x2 to 4x1) -->
+            <!-- Premium Floating Feature Card (Original Height) -->
+<!-- Premium Floating Feature Card (Responsive & Equal Alignment) -->
+<div class="hidden lg:block absolute right-3 left-3 sm:right-8 sm:left-8 md:w-[95%] md:left-1/2 md:right-auto md:-translate-x-1/2 lg:w-auto lg:transform-none lg:left-[-40px] lg:right-4 xl:left-[-80px] xl:right-10 bottom-[25px] md:bottom-[40px] lg:bottom-[40px] xl:bottom-[60px] bg-white/95 backdrop-blur-xl rounded-2xl lg:rounded-[2rem] shadow-[0_20px_50px_rgba(0,0,0,0.10)] border border-white/80 overflow-hidden z-30">
 
-                <div class="hero-anim-up delay-800 flex flex-col sm:flex-row flex-wrap gap-4 relative z-10">
-                    <a href="#contact" class="bg-gradient-to-r from-secondary to-teal-500 text-white px-8 py-4 rounded-full font-bold btn-hover-effect shadow-lg shadow-emerald-500/40 flex items-center justify-center gap-2 text-sm sm:text-base transition-all transform hover:scale-105 w-full sm:w-auto">
-                        Book Appointment <i class="fa-solid fa-arrow-right text-sm"></i>
-                    </a>
-                    <a href="tel:+917080853206" class="glass-dark border-white/20 hover:bg-white/10 text-white px-8 py-4 rounded-full font-bold flex items-center justify-center gap-2 text-sm sm:text-base transition-colors w-full sm:w-auto">
-                        <i class="fa-solid fa-phone-volume text-emerald-400 animate-pulse"></i> Call Varanasi Branch
-                    </a>
-                    <a href="tel:+919839913206" class="glass-dark border-white/20 hover:bg-white/10 text-white px-8 py-4 rounded-full font-bold flex items-center justify-center gap-2 text-sm sm:text-base transition-colors w-full sm:w-auto">
-                        <i class="fa-solid fa-phone-volume text-emerald-400 animate-pulse"></i> Call Chunar Branch
-                    </a>
-                </div>
+    <div class="grid grid-cols-2 md:grid-cols-4">
+
+        <!-- Feature -->
+        <div class="relative flex items-center justify-center gap-3 h-[62px] sm:h-[70px] md:h-[82px] px-3">
+            <div class="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 h-[58%] w-px bg-slate-200"></div>
+            <div class="md:hidden absolute bottom-0 left-1/2 -translate-x-1/2 w-[80%] h-px bg-slate-200"></div>
+
+            <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-emerald-50 flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-tooth text-[17px] text-emerald-500"></i>
+            </div>
+
+            <div class="w-[74px]">
+                <p class="text-[10px] sm:text-[11px] md:text-[11px] lg:text-[10px] xl:text-[11px] font-bold leading-tight text-slate-800">
+                    Advanced<br>Technology
+                </p>
             </div>
         </div>
 
-        <!-- Visible Slider Background Interactive Indicators -->
-        <div class="absolute bottom-[90px] sm:bottom-[120px] md:bottom-[150px] left-1/2 transform -translate-x-1/2 z-20 flex gap-3">
-            <button class="w-3 h-3 rounded-full bg-white hover:bg-primary transition-all hero-dot shadow-md" aria-label="View Slide 1" data-slide="0"></button>
-            <button class="w-3 h-3 rounded-full bg-white/40 hover:bg-white transition-all hero-dot shadow-md" aria-label="View Slide 2" data-slide="1"></button>
-            <button class="w-3 h-3 rounded-full bg-white/40 hover:bg-white transition-all hero-dot shadow-md" aria-label="View Slide 3" data-slide="2"></button>
-            <button class="w-3 h-3 rounded-full bg-white/40 hover:bg-white transition-all hero-dot shadow-md" aria-label="View Slide 4" data-slide="3"></button>
+        <!-- Feature -->
+        <div class="relative flex items-center justify-center gap-3 h-[62px] sm:h-[70px] md:h-[82px] px-3">
+            <div class="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 h-[58%] w-px bg-slate-200"></div>
+            <div class="md:hidden absolute bottom-0 left-1/2 -translate-x-1/2 w-[80%] h-px bg-slate-200"></div>
+
+            <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-emerald-50 flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-user-doctor text-[17px] text-emerald-500"></i>
+            </div>
+
+            <div class="w-[74px]">
+                <p class="text-[10px] sm:text-[11px] md:text-[11px] lg:text-[10px] xl:text-[11px] font-bold leading-tight text-slate-800">
+                    Expert<br>Dentists
+                </p>
+            </div>
         </div>
-        
-        <!-- Bottom Curve Graphic matching the very light green -->
-        <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-20">
-            <svg class="relative block w-full h-[30px] sm:h-[50px] md:h-[80px]" viewBox="0 0 1200 120" preserveAspectRatio="none">
+
+        <!-- Feature -->
+        <div class="relative flex items-center justify-center gap-3 h-[62px] sm:h-[70px] md:h-[82px] px-3">
+            <div class="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 h-[58%] w-px bg-slate-200"></div>
+
+            <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-emerald-50 flex items-center justify-center shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-[17px] h-[17px] fill-current text-emerald-500">
+                    <path d="M256 0c-4.8 0-9.6 1.4-13.6 4.2C130.6 84.1 66.8 90.5 24 93.3 10.6 94.2 0 105.4 0 118.8 0 357.7 94 482.3 241.6 510.1c4.7 1.3 9.7 1.3 14.5 0C418 482.3 512 357.7 512 118.8c0-13.4-10.6-24.6-24-25.5-42.8-2.8-106.6-9.2-218.4-89.1C265.6 1.4 260.8 0 256 0zm-35.3 355.3l-80-80c-6.2-6.2-6.2-16.4 0-22.6s16.4-6.2 22.6 0L220.7 310l125.3-125.3c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6l-136.6 136.6c-6.3 6.2-16.4 6.2-22.7 0z"/>
+                </svg>
+            </div>
+
+            <div class="w-[74px]">
+                <p class="text-[10px] sm:text-[11px] md:text-[11px] lg:text-[10px] xl:text-[11px] font-bold leading-tight text-slate-800">
+                    Safe &amp; Painless<br>Treatments
+                </p>
+            </div>
+        </div>
+
+        <!-- Feature -->
+        <div class="relative flex items-center justify-center gap-3 h-[62px] sm:h-[70px] md:h-[82px] px-3">
+
+            <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-emerald-50 flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-face-smile-beam text-[17px] text-emerald-500"></i>
+            </div>
+
+            <div class="w-[74px]">
+                <p class="text-[10px] sm:text-[11px] md:text-[11px] lg:text-[10px] xl:text-[11px] font-bold leading-tight text-slate-800">
+                    Personalized<br>Care
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+            
+            <!-- Bottom Centered Slider Indicators (Dash & Dots) -->
+            <!-- <div class="absolute bottom-[15px] md:bottom-[25px] lg:bottom-[40px] left-1/2 lg:left-1/4 transform -translate-x-1/2 z-40 flex items-center gap-2">
+                <button class="w-6 h-2 rounded-full bg-emerald-500 transition-all hero-dot-right cursor-pointer" aria-label="View Slide 1" data-slide="0"></button>
+                <button class="w-2 h-2 rounded-full bg-slate-300 hover:bg-emerald-400 transition-all hero-dot-right cursor-pointer" aria-label="View Slide 2" data-slide="1"></button>
+                <button class="w-2 h-2 rounded-full bg-slate-300 hover:bg-emerald-400 transition-all hero-dot-right cursor-pointer" aria-label="View Slide 3" data-slide="2"></button>
+                <button class="w-2 h-2 rounded-full bg-slate-300 hover:bg-emerald-400 transition-all hero-dot-right cursor-pointer" aria-label="View Slide 4" data-slide="3"></button>
+            </div> -->
+        </div>
+        <!-- Mobile & Tablet Feature Card -->
+<div class="block lg:hidden mt-5 px-1 sm:px-0">
+    <div class="bg-white/95 backdrop-blur-xl rounded-2xl shadow-[0_15px_35px_rgba(0,0,0,0.08)] border border-white/80 overflow-hidden">
+
+        <div class="grid grid-cols-2 sm:grid-cols-4">
+
+            <!-- Feature 1 -->
+            <div class="relative flex items-center justify-center gap-2 sm:gap-3 h-[64px] sm:h-[76px] px-2 sm:px-3">
+                <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[80%] h-px bg-slate-200 sm:hidden"></div>
+                <div class="hidden sm:block absolute right-0 top-1/2 -translate-y-1/2 h-[60%] w-px bg-slate-200"></div>
+
+                <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-emerald-50 flex items-center justify-center shrink-0">
+                    <i class="fa-solid fa-tooth text-emerald-500 text-base sm:text-lg"></i>
+                </div>
+
+                <p class="text-[10px] sm:text-[11px] font-bold leading-tight text-slate-800">
+                    Advanced<br>Technology
+                </p>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="relative flex items-center justify-center gap-2 sm:gap-3 h-[64px] sm:h-[76px] px-2 sm:px-3">
+                <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[80%] h-px bg-slate-200 sm:hidden"></div>
+                <div class="hidden sm:block absolute right-0 top-1/2 -translate-y-1/2 h-[60%] w-px bg-slate-200"></div>
+
+                <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-emerald-50 flex items-center justify-center shrink-0">
+                    <i class="fa-solid fa-user-doctor text-emerald-500 text-base sm:text-lg"></i>
+                </div>
+
+                <p class="text-[10px] sm:text-[11px] font-bold leading-tight text-slate-800">
+                    Expert<br>Dentists
+                </p>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="relative flex items-center justify-center gap-2 sm:gap-3 h-[64px] sm:h-[76px] px-2 sm:px-3">
+                <div class="hidden sm:block absolute right-0 top-1/2 -translate-y-1/2 h-[60%] w-px bg-slate-200"></div>
+
+                <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-emerald-50 flex items-center justify-center shrink-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-[17px] h-[17px] fill-current text-emerald-500">
+                        <path d="M256 0c-4.8 0-9.6 1.4-13.6 4.2C130.6 84.1 66.8 90.5 24 93.3 10.6 94.2 0 105.4 0 118.8 0 357.7 94 482.3 241.6 510.1c4.7 1.3 9.7 1.3 14.5 0C418 482.3 512 357.7 512 118.8c0-13.4-10.6-24.6-24-25.5-42.8-2.8-106.6-9.2-218.4-89.1C265.6 1.4 260.8 0 256 0zm-35.3 355.3l-80-80c-6.2-6.2-6.2-16.4 0-22.6s16.4-6.2 22.6 0L220.7 310l125.3-125.3c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6l-136.6 136.6c-6.3 6.2-16.4 6.2-22.7 0z"/>
+                    </svg>
+                </div>
+
+                <p class="text-[10px] sm:text-[11px] font-bold leading-tight text-slate-800">
+                    Safe &<br>Painless
+                </p>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="relative flex items-center justify-center gap-2 sm:gap-3 h-[64px] sm:h-[76px] px-2 sm:px-3">
+
+                <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-emerald-50 flex items-center justify-center shrink-0">
+                    <i class="fa-solid fa-face-smile-beam text-emerald-500 text-base sm:text-lg"></i>
+                </div>
+
+                <p class="text-[10px] sm:text-[11px] font-bold leading-tight text-slate-800">
+                    Personalized<br>Care
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+        <!-- Bottom Ambient Wavy Graphic masking section seams -->
+        <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-20 pointer-events-none hidden lg:block">
+            <svg class="relative block w-full h-[20px] sm:h-[30px] md:h-[40px]" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118,130.83,121.72,194.2,109.8,237.5,101.6,279.7,80.1,321.39,56.44Z" fill="#d1fae5"></path>
             </svg>
         </div>
     </section>
     
     <!-- Statistics Counter Grid Section -->
-    <div class="relative z-20 pb-16">
-        <div class="container mx-auto px-4 lg:px-8 -mt-24 sm:-mt-28 md:-mt-36 reveal">
+    <div class="relative z-20 pb-16 pt-8 bg-transparent">
+        <div class="container mx-auto px-4 lg:px-8 reveal">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
                 <div class="glass-card p-4 sm:p-6 rounded-2xl text-center border-t-4 border-emerald-500 shadow-lg">
                     <div class="w-10 h-10 sm:w-12 sm:h-12 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto mb-2 sm:mb-3 text-lg sm:text-xl">
@@ -597,7 +988,7 @@
             </div>
         </div>
     </div>
-    <section class="tooth-3d-section">
+    <!-- <section class="tooth-3d-section">
     <div class="tooth-3d-container">
         <iframe
             title="Tooth cross-section"
@@ -613,13 +1004,13 @@
             src="https://sketchfab.com/models/9cc281349c314cc4859e26af238f9cd5/embed?autostart=1&ui_infos=0&ui_controls=1&ui_stop=0">
         </iframe>
     </div>
-</section>
+</section> -->
     <!-- Treatments Grid Section -->
     <section id="treatments" class="py-16 md:py-24 relative overflow-hidden">
         <div class="container mx-auto px-4 lg:px-8 relative z-10">
             <div class="text-center max-w-3xl mx-auto mb-12 md:mb-16 reveal">
                 <span class="text-emerald-700 font-bold tracking-widest uppercase text-[10px] sm:text-xs md:text-sm bg-white/60 backdrop-blur-sm px-4 py-1.5 rounded-full">Advanced Medical Procedures</span>
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-sans font-extrabold tracking-tight text-slate-900 mt-4 mb-4 leading-tight">Comprehensive Dental Care Under One Roof</h2>
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-sans font-extrabold tracking-tight text-slate-900 mt-4 mb-4 leading-tight">Comprehensive Dental Care </h2>
                 <p class="text-slate-700 font-medium text-sm md:text-base leading-relaxed">At <strong class="text-slate-900 uppercase font-sans font-bold tracking-widest text-[10px] sm:text-xs">RASTOGI DENTAL CLINIC</strong>, we offer a complete range of modern dental treatments designed to improve oral health, restore confidence, and create beautiful smiles.</p>
             </div>
 
@@ -778,9 +1169,9 @@
                             <div class="marquee-wrapper absolute inset-0">
                                 <div class="marquee-content marquee-content-fast h-full">
                                     <img src="images/6.jpg" class="h-full w-auto object-cover" alt="Varanasi Facility 1">
-                                    <img src="images/3.webp" class="h-full w-auto object-cover" alt="Varanasi Facility 2">
+                                    <img src="images/3.png" class="h-full w-auto object-cover" alt="Varanasi Facility 2">
                                     <img src="images/4.webp" class="h-full w-auto object-cover" alt="Varanasi Facility 3">
-                                    <img src="images/2.webp" class="h-full w-auto object-cover" alt="Varanasi Facility 4">
+                                    <img src="images/2.png" class="h-full w-auto object-cover" alt="Varanasi Facility 4">
                                 </div>
                             </div>
                             <div class="absolute inset-0 bg-gradient-to-t from-dark/95 via-dark/40 to-transparent"></div>
@@ -988,19 +1379,19 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 reveal">
                 <!-- Video 1 (Instagram) -->
                 <div class="bg-white rounded-2xl overflow-hidden shadow-2xl aspect-[9/16] relative border border-emerald-700/50 w-full relative z-10">
-                    <iframe src="https://www.instagram.com/reel/DXgw-vXk_hx/embed" class="w-full h-full border-0 absolute inset-0 bg-white" allowtransparency="true" allow="encrypted-media" scrolling="no" loading="lazy"></iframe>
+                    <iframe src="https://www.instagram.com/reel/DUAtXq3kwXx/embed" class="w-full h-[97%] border-0 absolute top-0 left-0 bg-white" allowtransparency="true" allow="encrypted-media" scrolling="no" loading="lazy"></iframe>
                 </div>
                 <!-- Video 2 (Instagram) -->
                 <div class="bg-white rounded-2xl overflow-hidden shadow-2xl aspect-[9/16] relative border border-emerald-700/50 w-full relative z-10">
-                    <iframe src="https://www.instagram.com/p/DWTxFlpiYrJ/embed" class="w-full h-full border-0 absolute inset-0 bg-white" allowtransparency="true" allow="encrypted-media" scrolling="no" loading="lazy"></iframe>
+                    <iframe src="https://www.instagram.com/p/DWTxFlpiYrJ/embed" class="w-full h-[98%] border-0 absolute top-0 left-0 bg-white" allowtransparency="true" allow="encrypted-media" scrolling="no" loading="lazy"></iframe>
                 </div>
                 <!-- Video 3 (Facebook Reel Direct Video Iframe) -->
                 <div class="bg-white rounded-2xl overflow-hidden shadow-2xl aspect-[9/16] relative border border-emerald-700/50 w-full relative z-10">
-                    <iframe src="https://www.instagram.com/reel/DYoKebEJZ7I/embed" class="w-full h-full border-0 absolute inset-0 bg-white" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" loading="lazy"></iframe>
+                    <iframe src="https://www.instagram.com/reel/DYoKebEJZ7I/embed" class="w-full h-[98%] border-0 absolute top-0 left-0 bg-white" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" loading="lazy"></iframe>
                 </div>
                 <!-- Video 4 (Instagram) -->
                 <div class="bg-white rounded-2xl overflow-hidden shadow-2xl aspect-[9/16] relative border border-emerald-700/50 w-full relative z-10">
-                    <iframe src="https://www.instagram.com/reel/DXorOX_E9S6/embed" class="w-full h-full border-0 absolute inset-0 bg-white" allowtransparency="true" allow="encrypted-media" scrolling="no" loading="lazy"></iframe>
+                    <iframe src="https://www.instagram.com/reel/DXorOX_E9S6/embed" class="w-full h-[98%] border-0 absolute top-0 left-0 bg-white" allowtransparency="true" allow="encrypted-media" scrolling="no" loading="lazy"></iframe>
                 </div>
             </div>
         </div>
@@ -1034,7 +1425,7 @@
         <div class="marquee-wrapper mb-4 sm:mb-6 relative z-10">
             <div class="marquee-content marquee-content-fast">
                 <img src="images/1.png" class="rounded-2xl h-[140px] sm:h-[180px] md:h-[220px] w-auto object-cover shadow-xl border-4 border-white" alt="Asset 1">
-                <img src="images/2.webp" class="rounded-2xl h-[140px] sm:h-[180px] md:h-[220px] w-auto object-cover shadow-xl border-4 border-white" alt="Asset 2">
+                <img src="images/2.png" class="rounded-2xl h-[140px] sm:h-[180px] md:h-[220px] w-auto object-cover shadow-xl border-4 border-white" alt="Asset 2">
                 <img src="images/4.webp" class="rounded-2xl h-[140px] sm:h-[180px] md:h-[220px] w-auto object-cover shadow-xl border-4 border-white" alt="Asset 3">
                 <img src="images/5.webp" class="rounded-2xl h-[140px] sm:h-[180px] md:h-[220px] w-auto object-cover shadow-xl border-4 border-white" alt="Asset 4">
                 <img src="images/14.png" class="rounded-2xl h-[140px] sm:h-[180px] md:h-[220px] w-auto object-cover shadow-xl border-4 border-white" alt="Asset 5">
@@ -1046,7 +1437,7 @@
         <!-- Row 2 -->
         <div class="marquee-wrapper marquee-wrapper-reverse relative z-10">
             <div class="marquee-content">
-                <img src="images/6.jpg" class="rounded-2xl h-[140px] sm:h-[180px] md:h-[220px] w-auto object-cover shadow-xl border-4 border-white" alt="Asset 6">
+                <img src="images/6.png" class="rounded-2xl h-[140px] sm:h-[180px] md:h-[220px] w-auto object-cover shadow-xl border-4 border-white" alt="Asset 6">
                 <img src="images/11.png" class="rounded-2xl h-[140px] sm:h-[180px] md:h-[220px] w-auto object-cover shadow-xl border-4 border-white" alt="Asset 7">
                 <img src="images/16.png" class="rounded-2xl h-[140px] sm:h-[180px] md:h-[220px] w-auto object-cover shadow-xl border-4 border-white" alt="Asset 8">
                 <img src="images/12.png" class="rounded-2xl h-[140px] sm:h-[180px] md:h-[220px] w-auto object-cover shadow-xl border-4 border-white" alt="Asset 9">
@@ -1251,6 +1642,8 @@
                     <div class="flex gap-3 sm:gap-4">
                         <a href="https://www.instagram.com/rastogi_dental_clinic_" target="_blank" class="w-10 h-10 rounded-full bg-emerald-900/50 border border-emerald-800 flex items-center justify-center hover:bg-emerald-500 hover:text-white transition-all shadow-lg" aria-label="Instagram"><i class="fa-brands fa-instagram text-sm"></i></a>
                         <a href="https://www.facebook.com/p/Rastogi-Dental-Clinic-100064164120026/" target="_blank" class="w-10 h-10 rounded-full bg-emerald-900/50 border border-emerald-800 flex items-center justify-center hover:bg-emerald-500 hover:text-white transition-all shadow-lg" aria-label="Facebook"><i class="fa-brands fa-facebook-f text-sm"></i></a>
+                        <a href="https://www.youtube.com/@RastogiDentalclinic-h2" target="_blank" class="w-10 h-10 rounded-full bg-emerald-900/50 border border-emerald-800 flex items-center justify-center hover:bg-emerald-500 hover:text-white transition-all shadow-lg" aria-label="Instagram"><i class="fa-brands fa-youtube text-sm"></i></a>
+
                     </div>
                 </div>
 
@@ -1270,11 +1663,11 @@
                 <div>
                     <h4 class="text-white font-bold text-xs sm:text-sm uppercase tracking-widest mb-6 border-b border-emerald-800 pb-3">Treatments</h4>
                     <ul class="space-y-3 sm:space-y-4 text-xs sm:text-sm font-medium">
-                        <li><a href="#treatments" class="hover:text-emerald-400 transition-colors flex items-center gap-2"><i class="fa-solid fa-minus text-[10px] text-teal-500"></i> Painless Root Canal</a></li>
-                        <li><a href="#treatments" class="hover:text-emerald-400 transition-colors flex items-center gap-2"><i class="fa-solid fa-minus text-[10px] text-teal-500"></i> Dental Implants</a></li>
-                        <li><a href="#treatments" class="hover:text-emerald-400 transition-colors flex items-center gap-2"><i class="fa-solid fa-minus text-[10px] text-teal-500"></i> Metal & Ceramic Braces</a></li>
-                        <li><a href="#treatments" class="hover:text-emerald-400 transition-colors flex items-center gap-2"><i class="fa-solid fa-minus text-[10px] text-teal-500"></i> Smile Designing</a></li>
-                        <li><a href="#treatments" class="hover:text-emerald-400 transition-colors flex items-center gap-2"><i class="fa-solid fa-minus text-[10px] text-teal-500"></i> Pediatric Dental Care</a></li>
+                        <li><a href="#treatments" class="hover:text-emerald-400 transition-colors flex items-center gap-2">Painless Root Canal</a></li>
+                        <li><a href="#treatments" class="hover:text-emerald-400 transition-colors flex items-center gap-2">Dental Implants</a></li>
+                        <li><a href="#treatments" class="hover:text-emerald-400 transition-colors flex items-center gap-2">Metal & Ceramic Braces</a></li>
+                        <li><a href="#treatments" class="hover:text-emerald-400 transition-colors flex items-center gap-2">Smile Designing</a></li>
+                        <li><a href="#treatments" class="hover:text-emerald-400 transition-colors flex items-center gap-2">Pediatric Dental Care</a></li>
                     </ul>
                 </div>
 
@@ -1311,9 +1704,16 @@
     </footer>
 
     <!-- Back To Top Button -->
-    <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" id="backToTop" class="fixed bottom-6 right-6 w-12 h-12 sm:w-14 sm:h-14 bg-emerald-600 text-white rounded-full shadow-2xl flex justify-center items-center text-lg sm:text-xl opacity-0 translate-y-10 transition-all z-50 hover:bg-emerald-700 hover:scale-105 border-2 border-white/20" aria-label="Back to Top">
-        <i class="fa-solid fa-arrow-up"></i>
-    </button>
+    <!-- Back To Top Button -->
+    <button
+    id="backToTop"
+    class="fixed bottom-6 right-6 w-14 h-14 bg-emerald-600 text-white rounded-full shadow-2xl flex items-center justify-center text-xl transition-all duration-300 hover:scale-110 hover:bg-emerald-700  opacity-0 translate-y-10 z-50"
+    onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+    aria-label="Back to Top">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
 
     <!-- Custom Notification Toast overlay -->
     <div id="custom-toast" class="bg-slate-900 text-white px-5 sm:px-6 py-3.5 sm:py-4 rounded-xl shadow-2xl flex items-center gap-3 sm:gap-4 text-xs sm:text-sm border border-emerald-800 max-w-[calc(100vw-48px)] w-max mx-auto sm:mx-0">
@@ -1355,69 +1755,146 @@
     <!-- Operations Core JS Engine -->
     <script>
         // Preloader transition & Boot Particle Engine
-        window.addEventListener('load', () => {
-            setTimeout(() => {
-                const preloader = document.getElementById('preloader');
-                preloader.style.opacity = '0';
-                setTimeout(() => { preloader.style.display = 'none'; }, 500);
-            }, 600);
-            
-            // Boot automated background particles
-            initParticles();
-        });
+           // Preloader transition & Boot Particle Engine
+    window.addEventListener('load', () => {
+    setTimeout(() => {
+        const preloader = document.getElementById('preloader');
 
-        // Dynamic Background Medical Particles Engine
+        if (preloader) {
+            preloader.style.opacity = '0';
+
+            setTimeout(() => {
+                preloader.style.display = 'none';
+            }, 500);
+        }
+    }, 600);
+
+    initParticles();
+});
+
+const slides = document.querySelectorAll('.hero-slide-right');
+
+if (slides.length > 0) {
+    let current = 0;
+
+    setInterval(() => {
+        slides[current].classList.remove('active');
+        current = (current + 1) % slides.length;
+        slides[current].classList.add('active');
+    }, 3000);
+}
+
+        // Background Dynamic Particles engine (excludes Hero section)
         function initParticles() {
-            // Apply to all primary content sections
-            const sections = document.querySelectorAll('section, .bg-gradient-to-b');
-            const icons = ['fa-tooth', 'fa-heart-pulse', 'fa-shield-halved', 'fa-kit-medical', 'fa-stethoscope', 'fa-syringe', 'fa-staff-snake', 'fa-pump-medical', 'fa-capsules', 'fa-truck-medical', 'fa-dna', 'fa-pills'];
-            
-            sections.forEach(section => {
-                // Prevent particles in Hero and marquees
-                if(section.id === 'home' || section.classList.contains('hero-carousel') || section.classList.contains('marquee-wrapper')) return;
-                
-                const particleContainer = document.createElement('div');
-                particleContainer.className = 'absolute inset-0 overflow-hidden pointer-events-none z-0';
-                
-                // Determine appropriate light/dark color mappings
-                const isDark = section.classList.contains('bg-slate-900') || section.classList.contains('bg-gradient-to-br') && section.classList.contains('from-emerald-900');
-                const colors = isDark ? ['text-emerald-400/10', 'text-teal-400/10', 'text-green-400/10'] : ['text-emerald-600/10', 'text-teal-600/10', 'text-green-600/10'];
-                
-                // Generate exactly 12 small floating icons per section
-                for(let i = 0; i < 12; i++) { 
-                    const iconElement = document.createElement('i');
-                    const randomIcon = icons[Math.floor(Math.random() * icons.length)];
-                    const randomColor = colors[Math.floor(Math.random() * colors.length)];
-                    const randomSize = Math.floor(Math.random() * 14) + 12; // Small 12px to 26px
-                    const randomLeft = Math.random() * 100; 
-                    const randomTop = Math.random() * 100; 
-                    const randomDuration = Math.floor(Math.random() * 15) + 15; 
-                    const randomDelay = Math.random() * -20; 
-                    const animType = Math.random() > 0.5 ? 'float-particle-1' : 'float-particle-2';
-                    
-                    iconElement.className = `fa-solid ${randomIcon} ${randomColor} absolute`;
-                    iconElement.style.fontSize = `${randomSize}px`;
-                    iconElement.style.left = `${randomLeft}%`;
-                    iconElement.style.top = `${randomTop}%`;
-                    iconElement.style.animation = `${animType} ${randomDuration}s infinite ease-in-out`;
-                    iconElement.style.animationDelay = `${randomDelay}s`;
-                    
-                    particleContainer.appendChild(iconElement);
-                }
-                // Inject at the very bottom layer of the section
-                section.insertBefore(particleContainer, section.firstChild);
-            });
+           
+
+    const icons = [
+        'fa-tooth',
+        'fa-tooth',
+        'fa-tooth',
+        'fa-tooth',
+        'fa-heart-pulse',
+        'fa-kit-medical',
+        'fa-shield-halved',
+        'fa-user-doctor',
+        'fa-stethoscope',
+        'fa-syringe',
+        'fa-notes-medical',
+        'fa-briefcase-medical',
+        'fa-hospital-user',
+        'fa-bandage',
+        'fa-hand-sparkles',
+        'fa-face-smile',
+        'fa-star-of-life'
+    ];
+
+    const createParticles = (section) => {
+
+        // Don't create twice
+        if (section.querySelector('.particle-container')) return;
+
+        const particleContainer = document.createElement('div');
+        particleContainer.className =
+            'particle-container absolute inset-0 overflow-hidden pointer-events-none z-0';
+
+        // Hero gets more particles
+        const particleCount = section.id === 'home' ? 18 : 10;
+
+        for (let i = 0; i < particleCount; i++) {
+
+            const icon = document.createElement('i');
+
+            const randomIcon =
+                icons[Math.floor(Math.random() * icons.length)];
+
+            icon.className =
+                `fa-solid ${randomIcon} text-emerald-600/10 absolute`;
+
+            icon.style.fontSize =
+                `${Math.random() * 14 + 12}px`;
+
+            icon.style.left =
+                `${Math.random() * 100}%`;
+
+            icon.style.top =
+                `${Math.random() * 100}%`;
+
+            icon.style.animation =
+                `${Math.random() > 0.5 ? 'float-particle-1' : 'float-particle-2'}
+                 ${15 + Math.random() * 15}s
+                 infinite ease-in-out`;
+
+            icon.style.animationDelay =
+                `${-Math.random() * 20}s`;
+
+            particleContainer.appendChild(icon);
         }
 
+        section.insertBefore(
+            particleContainer,
+            section.firstChild
+        );
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+                createParticles(entry.target);
+
+                // Stop observing once particles are created
+                observer.unobserve(entry.target);
+
+            }
+
+        });
+
+    }, {
+        root: null,
+        threshold: 0.15
+    });
+
+    document.querySelectorAll('section').forEach(section => {
+        observer.observe(section);
+    });
+
+
+        }
+
+
         // Sticky Nav shadow toggler & Scroll Progress Indicator calculation
+        // Scrolling dynamics (Navbar + Back To Top)
         window.onscroll = function() {
             let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
             let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
             let scrolled = (winScroll / height) * 100;
-            document.getElementById("myBar").style.width = scrolled + "%";
+            // document.getElementById("myBar").style.width = scrolled + "%";
 
             const navbar = document.getElementById('navbar');
             const btt = document.getElementById('backToTop');
+            
             if (winScroll > 40) {
                 navbar.classList.add('shadow-xl', 'from-blue-950', 'to-sky-900', 'backdrop-blur-md');
                 navbar.classList.remove('from-blue-900', 'to-sky-800', 'border-blue-700');
@@ -1454,43 +1931,40 @@
             }); 
         });
 
-        // Hero Slider Integration
-        const slides = document.querySelectorAll('.hero-slide');
-        const dots = document.querySelectorAll('.hero-dot');
-        let currentSlide = 0;
-        let slideInterval;
+        
+        // Dedicated Hero Right-Side Image Slider
+        const slidesRight = document.querySelectorAll('.hero-slide-right');
+        const dotsRight = document.querySelectorAll('.hero-dot-right');
+        let currentSlideRight = 0;
+        let slideIntervalRight;
 
-        function showSlide(index) {
-            if(!slides.length) return;
-            slides.forEach(s => s.classList.remove('active'));
-            dots.forEach(d => {
-                d.classList.replace('bg-white', 'bg-white/40');
-                d.classList.replace('hover:bg-primary', 'hover:bg-white');
+        function showSlideRight(index) {
+            if(!slidesRight.length) return;
+            slidesRight.forEach(s => s.classList.remove('active'));
+            dotsRight.forEach(d => {
+                d.className = 'w-2 h-2 rounded-full bg-slate-300 hover:bg-emerald-400 transition-all hero-dot-right cursor-pointer shadow-sm';
             });
             
-            slides[index].classList.add('active');
-            if(dots[index]) {
-                dots[index].classList.replace('bg-white/40', 'bg-white');
-                dots[index].classList.replace('hover:bg-white', 'hover:bg-primary');
+            slidesRight[index].classList.add('active');
+            if(dotsRight[index]) {
+                dotsRight[index].className = 'w-6 h-2 rounded-full bg-emerald-500 transition-all hero-dot-right cursor-pointer shadow-sm';
             }
-            currentSlide = index;
+            currentSlideRight = index;
         }
 
-        function nextSlide() {
-            showSlide((currentSlide + 1) % slides.length);
-        }
+        function nextSlideRight() { showSlideRight((currentSlideRight + 1) % slidesRight.length); }
 
-        if(slides.length > 0) {
-            slideInterval = setInterval(nextSlide, 3500); // Fast interval to make sliding obvious
-            
-            dots.forEach((dot, index) => {
+        if(slidesRight.length > 0) {
+            slideIntervalRight = setInterval(nextSlideRight, 3000); // 5 second relaxed pace
+            dotsRight.forEach((dot, index) => {
                 dot.addEventListener('click', () => {
-                    clearInterval(slideInterval);
-                    showSlide(index);
-                    slideInterval = setInterval(nextSlide, 3500);
+                    clearInterval(slideIntervalRight);
+                    showSlideRight(index);
+                    slideIntervalRight = setInterval(nextSlideRight, 3000);
                 });
             });
         }
+
 
         // Scroll reveal trigger check
         function checkScrollReveal() {
