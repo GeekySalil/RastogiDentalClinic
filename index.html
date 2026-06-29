@@ -15,14 +15,30 @@ content="Looking for the best dentist in Varanasi? Rastogi Dental Clinic offers 
     <meta property="og:image" content="https://lh3.googleusercontent.com/gps-cs-s/APNQkAGZGQ_kQpKznaf4h0xnRwEYcHFlfhJvvwIdU-SkdOEA0jmxzVYen5G1r45pdayfPGhpIEprGXFqUJgnGtQ_iFOHBly5mNyJf6u0SGQlBCUI-awYOXu3ouE5qE4ZStQ0IcCXO7n1KPb_eBGF=s1360-w1360-h1020-rw">
     <meta property="og:type" content="website">
      <!--favicon-->
-    <link rel="icon" type="image/png" href="images/circle-logoo.png">
+    <!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+<!-- PNG Favicons -->
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+
+<!-- Apple Devices -->
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+
+<!-- Android / PWA -->
+<link rel="icon" type="image/png" sizes="192x192" href="images/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="images/android-chrome-512x512.png">
+
+<!-- Theme Color -->
+<meta name="theme-color" content="#059669">
     <link rel="canonical" href="https://rastogidentalclinicvns.com/">
     <!-- Tailwind Play Framework -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" >
+    <link rel="stylesheet" href="assets/css/style.css">
 
-    <script>
+    <!-- <script>
         tailwind.config = {
             theme: {
                 extend: {
@@ -39,406 +55,9 @@ content="Looking for the best dentist in Varanasi? Rastogi Dental Clinic offers 
                 }
             }
         }
-    </script>
+    </script> -->
 
-    <style>
-        :root {
-            --primary: #0ea5e9;
-            --secondary: #10b981;
-        }
-        body {
-            overflow-x: hidden;
-            background-color: transparent;
-        }
-        
-        /* Preloader styling */
-        #preloader {
-            position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background: #03022c;
-            z-index: 9999;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transition: opacity 0.5s ease;
-        }
-        .tooth-loader {
-            /* font-size: 3.5rem;
-            color: var(--primary); */
-            animation: pulse-tooth 1.5s infinite ease-in-out;
-        }
-        @keyframes pulse-tooth {
-            0% { transform: scale(0.9) rotate(0deg); opacity: 0.7; }
-            50% { transform: scale(1.1) rotate(15deg); opacity: 1; }
-            100% { transform: scale(0.9) rotate(0deg); opacity: 0.7; }
-        }
-
-        /* Scroll Progress Bar styling */
-        .progress-container {
-            position: fixed;
-            top: 0; z-index: 1000;
-            width: 100%; height: 4px;
-            background: transparent;
-        }
-        .progress-bar {
-            height: 4px;
-            background: linear-gradient(to right, var(--secondary), var(--primary));
-            width: 0%;
-        }
-
-        /* Glassmorphism panel variables */
-        .glass-card {
-            background: rgba(255, 255, 255, 0.75);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            border: 1px solid rgba(255, 255, 255, 0.6);
-            box-shadow: 0 8px 32px 0 rgba(16, 185, 129, 0.08);
-        }
-        .glass-dark {
-            background: rgba(15, 23, 42, 0.85);
-            backdrop-filter: blur(14px);
-            -webkit-backdrop-filter: blur(14px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        /* Hero Carousel Background dynamics 
-        .hero-carousel {
-            position: absolute;
-            top: 0; left: 0; width: 100%; height: 100%;
-            z-index: -1;
-            overflow: hidden;
-        }
-        .hero-slide {
-            position: absolute;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background-size: cover;
-            background-position: center;
-            opacity: 0;
-            transition: opacity 1.2s ease-in-out;
-        }
-        .hero-slide.active {
-            opacity: 1;
-             animation: pan-zoom 15s infinite alternate; 
-        }
-        @keyframes pan-zoom {
-            from { transform: scale(1); }
-            to { transform: scale(1.08); }
-        }
-        .hero-overlay {
-            position: absolute;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background: linear-gradient(90deg, rgba(15, 23, 42, 0.95) 0%, rgba(15, 23, 42, 0.8) 50%, rgba(15, 23, 42, 0.6) 100%);
-        }*/
-
-        /* Hero Right-Side Slider Properties */
-        .hero-carousel-right {
-            position: absolute;
-            top: 0; left: 0; width: 100%; height: 100%;
-            overflow: hidden;
-        }
-        .hero-slide-right {
-            position: absolute;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background-size: cover;
-            background-position: center;
-            opacity: 0;
-            transition: opacity 1.5s ease-in-out;
-        }
-        .hero-slide-right.active {
-            opacity: 1;
-        }
-
-        /* Background Animated Medical Elements (Dynamic Particles) */
-        @keyframes float-particle-1 {
-            0%, 100% { transform: translate(0, 0) rotate(0deg); }
-            33% { transform: translate(25px, -35px) rotate(120deg); }
-            66% { transform: translate(-15px, 20px) rotate(240deg); }
-        }
-        @keyframes float-particle-2 {
-            0%, 100% { transform: translate(0, 0) rotate(0deg); }
-            33% { transform: translate(-25px, 30px) rotate(-120deg); }
-            66% { transform: translate(20px, -25px) rotate(-240deg); }
-        }
-
-        /* Premium button hover transformations */
-        .btn-hover-effect {
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            position: relative;
-            overflow: hidden;
-        }
-        .btn-hover-effect::after {
-            content: '';
-            position: absolute;
-            top: 50%; left: 50%;
-            width: 300%; height: 300%;
-            background: rgba(255, 255, 255, 0.15);
-            transition: all 0.5s ease;
-            border-radius: 50%;
-            transform: translate(-50%, -50%) scale(0);
-        }
-        .btn-hover-effect:hover::after {
-            transform: translate(-50%, -50%) scale(1);
-        }
-        .card-hover {
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        .card-hover:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 40px rgba(16, 185, 129, 0.12);
-        }
-
-        /* Initial Hero Entrance Animations 
-        @keyframes heroFadeInUp {
-            from { opacity: 0; transform: translateY(30px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes heroFadeInLeft {
-            from { opacity: 0; transform: translateX(-40px); }
-            to { opacity: 1; transform: translateX(0); }
-        }
-        @keyframes heroFadeInRight {
-            from { opacity: 0; transform: translateX(40px); }
-            to { opacity: 1; transform: translateX(0); }
-        }
-        @keyframes heroScaleIn {
-            from { opacity: 0; transform: scale(0.95); }
-            to { opacity: 1; transform: scale(1); }
-        }
-        
-        .hero-anim-up { animation: heroFadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards; opacity: 0; }
-        .hero-anim-left { animation: heroFadeInLeft 1s cubic-bezier(0.16, 1, 0.3, 1) forwards; opacity: 0; }
-        .hero-anim-right { animation: heroFadeInRight 1s cubic-bezier(0.16, 1, 0.3, 1) forwards; opacity: 0; }
-        .hero-anim-scale { animation: heroScaleIn 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards; opacity: 0; }
-
-        .delay-200 { animation-delay: 200ms; }
-        .delay-400 { animation-delay: 400ms; }
-        .delay-600 { animation-delay: 600ms; }
-        .delay-800 { animation-delay: 800ms; }
-
-         Reveal animations on scroll */
-        .reveal {
-            opacity: 0;
-            transform: translateY(35px);
-            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        .reveal.active {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* Continuous marquee loops */
-        .marquee-wrapper {
-            display: flex;
-            overflow: hidden;
-            user-select: none;
-            gap: 1rem;
-        }
-        .marquee-content {
-            display: flex;
-            flex-shrink: 0;
-            gap: 1rem;
-            animation: slide-left 25s linear infinite;
-        }
-        .marquee-wrapper:hover .marquee-content {
-            animation-play-state: paused;
-        }
-        .marquee-content-fast {
-            animation: slide-left 18s linear infinite;
-        }
-        .marquee-wrapper-reverse .marquee-content {
-            animation: slide-right 25s linear infinite;
-        }
-        @keyframes slide-left {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
-        }
-        @keyframes slide-right {
-            0% { transform: translateX(-50%); }
-            100% { transform: translateX(0); }
-        }
-
-        /* Testimonial slider properties */
-        .testimonial-slider {
-            display: flex;
-            transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        /* Interactive Support Agent Bounds */
-        #chatbot-window {
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            transform-origin: bottom left;
-            transform: scale(0);
-            opacity: 0;
-            max-width: calc(100vw - 48px);
-        }
-        #chatbot-window.open {
-            transform: scale(1);
-            opacity: 1;
-        }
-        .chat-msg {
-            animation: bubble-up 0.3s ease-out forwards;
-            word-wrap: break-word;
-        }
-        @keyframes bubble-up {
-            from { opacity: 0; transform: translateY(12px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        /* Custom non-intrusive Toast systems */
-        #custom-toast {
-            position: fixed;
-            bottom: 24px;
-            right: 24px;
-            z-index: 9999;
-            transform: translateY(100px);
-            opacity: 0;
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            max-width: calc(100vw - 48px);
-        }
-        #custom-toast.show {
-            transform: translateY(0);
-            opacity: 1;
-        }
-        /* 3D Tooth Section 
-
-.tooth-3d-section{
-    width:100%;
-    min-height:70vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    padding:40px 0;
-    background:linear-gradient(
-        135deg,
-        #f8fdff 0%,
-        #eefcff 50%,
-        #f4fffc 100%
-    );
-}
-
-.tooth-3d-container{
-    width:80vw;
-    height:70vh;
-    max-width:1400px;
-    border-radius:24px;
-    overflow:hidden;
-    box-shadow:
-        0 20px 60px rgba(0,0,0,.12),
-        0 0 40px rgba(0,180,255,.08);
-}
-
-.tooth-3d-container iframe{
-    width:100%;
-    height:100%;
-    border:none;
-    display:block;
-}*/
-.video-showcase{
-    padding:100px 20px;
-    background:#f8fcff;
-    text-align:center;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-}
-/* .chair-3d-section{
-    padding:100px 20px;
-    background:linear-gradient(
-        135deg,
-        #f8fcff 0%,
-        #eefcff 50%,
-        #f4fffc 100%
-    );
-    text-align:center;
-}
-
-.chair-3d-container{
-     width:100%;
-    height:65vh;
-    min-height:500px;
-    border-radius:24px;
-    overflow:hidden;
-    box-shadow:
-        0 25px 60px rgba(0,0,0,.15),
-        0 0 40px rgba(0,168,107,.08);
-}
-
-.chair-3d-container iframe{
-    width:100%;
-    height:100%;
-    border:none;
-    display:block;
-}
-
-@media(max-width:768px){
-
-    .chair-3d-section{
-        display:none;
-    }
-
-} */
-.video-header{
-    max-width:800px;
-    margin:0 auto 50px;
-}
-
-.video-header .section-tag{
-    display:inline-block;
-    background:#e6f7f3;
-    color:#00a86b;
-    padding:8px 18px;
-    border-radius:50px;
-    font-weight:600;
-    margin-bottom:20px;
-}
-
-.video-header h2{
-    font-size:clamp(2rem,4vw,3.5rem);
-    font-weight:800;
-    color:#0f4c81;
-    margin-bottom:15px;
-}
-
-.video-header p{
-    font-size:1.1rem;
-    color:#64748b;
-    line-height:1.8;
-}
-
-.video-wrapper{
-    width:min(80vw,450px);
-    height:70vh;
-    border-radius:30px;
-    overflow:hidden;
-    box-shadow:0 25px 60px rgba(0,0,0,.15);
-    margin:auto;
-}
-
-.video-wrapper video{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    display:block;
-}
-
-@media(max-width:768px){
-    .video-wrapper{
-        width:90vw;
-        height:60vh;
-    }
-}
-
-/* Disable completely on mobile */
-
-@media (max-width: 768px){
-
-    .tooth-3d-section{
-        display:none !important;
-    }
-
-}
-
-    </style>
+    
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -449,8 +68,8 @@ content="Looking for the best dentist in Varanasi? Rastogi Dental Clinic offers 
       "@id": "https://rastogidentalclinicvns.com/#dentist",
       "name": "Rastogi Dental Clinic",
       "url": "https://rastogidentalclinicvns.com",
-      "image": "https://rastogidentalclinicvns.com/images/logo.png",
-      "logo": "https://rastogidentalclinicvns.com/images/logo.png",
+      "image": "https://rastogidentalclinicvns.com/images/logoo.webp",
+      "logo": "https://rastogidentalclinicvns.com/images/circle-logoo.webp",
       "telephone": "+91-7080853206",
       "email": "info@rastogidentalclinicvns.com",
       "priceRange": "₹₹",
@@ -484,13 +103,24 @@ content="Looking for the best dentist in Varanasi? Rastogi Dental Clinic offers 
         }
       ],
       "areaServed": [
+      
+  "Varanasi",
+  "BHU",
+  "Lanka",
+  "Sundarpur",
+  "Bhullanpur",
+  "Bhikharipur",
+  "Kanchanpur",
+  "Chunar Road",
+  "Akhari",
+
         {
           "@type": "City",
           "name": "Varanasi"
         },
         {
           "@type": "City",
-          "name": "Bhadohi"
+          "name": "Chunar"
         },
         {
           "@type": "City",
@@ -498,13 +128,13 @@ content="Looking for the best dentist in Varanasi? Rastogi Dental Clinic offers 
         },
         {
           "@type": "City",
-          "name": "Mughalsarai"
+          "name": "Bhullanpur"
         }
       ],
       "sameAs": [
-        "https://www.facebook.com/YOUR_PAGE",
-        "https://www.instagram.com/YOUR_PAGE",
-        "https://www.youtube.com/YOUR_CHANNEL"
+        "https://www.facebook.com/p/Rastogi-Dental-Clinic-100064164120026/",
+        "https://www.instagram.com/rastogi_dental_clinic_/",
+        "https://www.youtube.com/@RastogiDentalclinic-h2"
       ],
       "medicalSpecialty": "Dentistry",
       "hasOfferCatalog": {
@@ -578,7 +208,7 @@ content="Looking for the best dentist in Varanasi? Rastogi Dental Clinic offers 
       "url": "https://rastogidentalclinicvns.com",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://rastogidentalclinicvns.com/images/logo.png"
+        "url": "https://rastogidentalclinicvns.com/images/circle-logoo.webp"
       }
     },
 
@@ -605,7 +235,7 @@ content="Looking for the best dentist in Varanasi? Rastogi Dental Clinic offers 
     <div id="preloader">
         <div class="text-center">
             <!-- <i class="fa-solid fa-tooth tooth-loader mb-6 block"></i> -->
-             <img src="images/logoo.png" alt="RASTOGI DENTAL CLINIC Logo" class="tooth-loader mx-auto mb-6 block w-20 h-20 rounded-2xl shadow-lg border border-sky-400">
+             <img src="images/logoo.webp" alt="RASTOGI DENTAL CLINIC Logo" class="tooth-loader mx-auto mb-6 block w-20 h-20 rounded-2xl shadow-lg border border-sky-400">
             <!-- <h2 class="text-[16px] sm:text-2xl md:text-3xl font-sans font-extrabold tracking-widest text-white uppercase px-4 whitespace-nowrap">RASTOGI DENTAL CLINIC</h2>
             <div class="w-16 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mt-4 rounded-full animate-pulse"></div> -->
             <h2 class="text-2xl md:text-3xl font-sans font-extrabold tracking-widest text-white uppercase px-4 whitespace-nowrap">RASTOGI DENTAL CLINIC</h2>
@@ -630,7 +260,7 @@ content="Looking for the best dentist in Varanasi? Rastogi Dental Clinic offers 
             
             <!-- Logo Block -->
             <a href="#" class="flex flex-nowrap items-center gap-2 sm:gap-3 group z-50 decoration-none outline-none focus:ring-2 focus:ring-sky-400 rounded-xl p-1">
-                <img src="images/logoo.png" alt="RASTOGI DENTAL CLINIC Logo" class="h-7 w-7 sm:h-8 sm:w-8 md:h-10 md:w-10 rounded-xl shadow border border-blue-400/30 object-cover shrink-0 transition-transform group-hover:scale-105">
+                <img src="images/logoo.webp" alt="RASTOGI DENTAL CLINIC Logo" class="h-7 w-7 sm:h-8 sm:w-8 md:h-10 md:w-10 rounded-xl shadow border border-blue-400/30 object-cover shrink-0 transition-transform group-hover:scale-105">
                 <span class="text-[14px] sm:text-[13px] md:text-lg lg:text-xl font-black tracking-widest text-white uppercase whitespace-nowrap transition-colors duration-300 group-hover:text-sky-200">
                     RASTOGI DENTAL CLINIC
                 </span>
@@ -777,9 +407,9 @@ content="Looking for the best dentist in Varanasi? Rastogi Dental Clinic offers 
             <!-- The Rigid Curved Container ensuring photos don't bleed out. Curve adapts perfectly to screen size. -->
             <div class="absolute right-0 top-0 w-full lg:w-[110%] xl:w-[125%] h-full overflow-hidden rounded-t-[3rem] md:rounded-t-[5rem] lg:rounded-t-none lg:rounded-l-[6rem] xl:rounded-l-[8rem] shadow-[-20px_0_40px_rgba(16,185,129,0.1)] border-t-4 md:border-t-8 lg:border-t-0 lg:border-l-[6px] border-white/60">
                 <div class="hero-carousel-right h-full w-full relative bg-emerald-50">
-                    <div class="hero-slide-right active absolute inset-0 bg-cover bg-center transition-opacity duration-[1.5s] ease-in-out opacity-100" style="background-image: url('images/6.png');"></div>
-                    <div class="hero-slide-right absolute inset-0 bg-cover bg-center transition-opacity duration-[1.5s] ease-in-out opacity-0" style="background-image: url('images/2.png');"></div>
-                    <div class="hero-slide-right absolute inset-0 bg-cover bg-center transition-opacity duration-[1.5s] ease-in-out opacity-0" style="background-image: url('images/11.png');"></div>
+                    <div class="hero-slide-right active absolute inset-0 bg-cover bg-center transition-opacity duration-[1.5s] ease-in-out opacity-100" style="background-image: url('images/6.webp');"></div>
+                    <div class="hero-slide-right absolute inset-0 bg-cover bg-center transition-opacity duration-[1.5s] ease-in-out opacity-0" style="background-image: url('images/2.webp');"></div>
+                    <div class="hero-slide-right absolute inset-0 bg-cover bg-center transition-opacity duration-[1.5s] ease-in-out opacity-0" style="background-image: url('images/11.webp');"></div>
                     <div class="hero-slide-right absolute inset-0 bg-cover bg-center transition-opacity duration-[1.5s] ease-in-out opacity-0" style="background-image: url('images/4.webp');"></div>
                 </div>
             </div>
@@ -787,25 +417,37 @@ content="Looking for the best dentist in Varanasi? Rastogi Dental Clinic offers 
             <!-- Circular Spinning Badge Overlapping the Curve -->
             <!-- Centered exactly at top seam on Mobile, Pinned to Left Curve Edge on Desktop -->
             <div class="absolute left-1/2 lg:left-0 lg:-translate-x-[89%] top-0 lg:top-[1%] transform -translate-x-1/2 -translate-y-1/2 lg:translate-y-0 w-24 h-24 sm:w-32 sm:h-32 lg:w-36 lg:h-36 bg-white/90 backdrop-blur-md rounded-full flex items-center justify-center shadow-[0_10px_30px_rgba(0,0,0,0.15)] border-4 border-white z-30">
-                <div class="absolute inset-1.5 border border-dashed border-emerald-400 rounded-full animate-[spin_20s_linear_infinite]"></div>
-                <!-- Precision Circular Text using SVG -->
-                <svg viewBox="0 0 100 100" class="absolute w-[90%] h-[90%] animate-[spin_25s_linear_infinite]">
-                    <path id="circlePath" d="M 50, 50 m -34, 0 a 34,34 0 1,1 68,0 a 34,34 0 1,1 -68,0" fill="transparent" />
-                    <text font-size="9.5" font-weight="900" fill="#059669" letter-spacing="2.5" class="font-sans uppercase">
-                        <textPath href="#circlePath" startOffset="5%">Professional Dental Care</textPath>
-                    </text>
-                </svg>
-                <i class="fa-solid fa-tooth text-emerald-500 text-2xl sm:text-3xl shadow-sm drop-shadow-md"></i>
-            </div>
+
+    <!-- Rotating Dashed Ring -->
+    <div class="absolute inset-1.5 border border-dashed border-emerald-400 rounded-full animate-[spin_20s_linear_infinite]"></div>
+
+    <!-- Rotating Circular Text -->
+    <svg viewBox="0 0 100 100" class="absolute w-[90%] h-[90%] animate-[spin_25s_linear_infinite]">
+        <path id="circlePath" d="M 50, 50 m -34, 0 a 34,34 0 1,1 68,0 a 34,34 0 1,1 -68,0" fill="transparent" />
+        <text font-size="9.5" font-weight="900" fill="#059669" letter-spacing="2.5" class="font-sans uppercase">
+            <textPath href="#circlePath" startOffset="5%">
+                Professional Dental Care
+            </textPath>
+        </text>
+    </svg>
+
+    <!-- Center Logo -->
+    <img
+        src="images/circle-logoo.webp"
+        alt="Rastogi Dental Clinic Logo"
+        class="w-10 h-10 sm:w-14 sm:h-14 lg:w-16 lg:h-16 object-contain z-10"
+    >
+
+</div>
             
             <!-- 4-Grid Features Rectangular Hover Card (Responsive 2x2 to 4x1) -->
             <!-- Premium Floating Feature Card (Original Height) -->
 <!-- Premium Floating Feature Card (Responsive & Equal Alignment) -->
-<div class="hidden lg:block absolute right-3 left-3 sm:right-8 sm:left-8 md:w-[95%] md:left-1/2 md:right-auto md:-translate-x-1/2 lg:w-auto lg:transform-none lg:left-[-40px] lg:right-4 xl:left-[-80px] xl:right-10 bottom-[25px] md:bottom-[40px] lg:bottom-[40px] xl:bottom-[60px] bg-white/95 backdrop-blur-xl rounded-2xl lg:rounded-[2rem] shadow-[0_20px_50px_rgba(0,0,0,0.10)] border border-white/80 overflow-hidden z-30">
+<!-- <div class="hidden lg:block absolute right-3 left-3 sm:right-8 sm:left-8 md:w-[95%] md:left-1/2 md:right-auto md:-translate-x-1/2 lg:w-auto lg:transform-none lg:left-[-40px] lg:right-4 xl:left-[-80px] xl:right-10 bottom-[25px] md:bottom-[40px] lg:bottom-[40px] xl:bottom-[60px] bg-white/95 backdrop-blur-xl rounded-2xl lg:rounded-[2rem] shadow-[0_20px_50px_rgba(0,0,0,0.10)] border border-white/80 overflow-hidden z-30">
 
     <div class="grid grid-cols-2 md:grid-cols-4">
 
-        <!-- Feature -->
+        
         <div class="relative flex items-center justify-center gap-3 h-[62px] sm:h-[70px] md:h-[82px] px-3">
             <div class="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 h-[58%] w-px bg-slate-200"></div>
             <div class="md:hidden absolute bottom-0 left-1/2 -translate-x-1/2 w-[80%] h-px bg-slate-200"></div>
@@ -821,7 +463,7 @@ content="Looking for the best dentist in Varanasi? Rastogi Dental Clinic offers 
             </div>
         </div>
 
-        <!-- Feature -->
+        
         <div class="relative flex items-center justify-center gap-3 h-[62px] sm:h-[70px] md:h-[82px] px-3">
             <div class="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 h-[58%] w-px bg-slate-200"></div>
             <div class="md:hidden absolute bottom-0 left-1/2 -translate-x-1/2 w-[80%] h-px bg-slate-200"></div>
@@ -837,7 +479,7 @@ content="Looking for the best dentist in Varanasi? Rastogi Dental Clinic offers 
             </div>
         </div>
 
-        <!-- Feature -->
+        
         <div class="relative flex items-center justify-center gap-3 h-[62px] sm:h-[70px] md:h-[82px] px-3">
             <div class="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 h-[58%] w-px bg-slate-200"></div>
 
@@ -854,7 +496,7 @@ content="Looking for the best dentist in Varanasi? Rastogi Dental Clinic offers 
             </div>
         </div>
 
-        <!-- Feature -->
+        
         <div class="relative flex items-center justify-center gap-3 h-[62px] sm:h-[70px] md:h-[82px] px-3">
 
             <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-emerald-50 flex items-center justify-center shrink-0">
@@ -869,7 +511,7 @@ content="Looking for the best dentist in Varanasi? Rastogi Dental Clinic offers 
         </div>
 
     </div>
-</div>
+</div> -->
 
             
             <!-- Bottom Centered Slider Indicators (Dash & Dots) -->
@@ -879,9 +521,17 @@ content="Looking for the best dentist in Varanasi? Rastogi Dental Clinic offers 
                 <button class="w-2 h-2 rounded-full bg-slate-300 hover:bg-emerald-400 transition-all hero-dot-right cursor-pointer" aria-label="View Slide 3" data-slide="2"></button>
                 <button class="w-2 h-2 rounded-full bg-slate-300 hover:bg-emerald-400 transition-all hero-dot-right cursor-pointer" aria-label="View Slide 4" data-slide="3"></button>
             </div> -->
-        </div>
+        <!-- </div> -->
         <!-- Mobile & Tablet Feature Card -->
-<div class="block lg:hidden mt-5 px-1 sm:px-0">
+
+        <!-- Bottom Ambient Wavy Graphic masking section seams -->
+        <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-20 pointer-events-none hidden lg:block">
+            <svg class="relative block w-full h-[20px] sm:h-[30px] md:h-[40px]" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118,130.83,121.72,194.2,109.8,237.5,101.6,279.7,80.1,321.39,56.44Z" fill="#d1fae5"></path>
+            </svg>
+        </div>
+    </section>
+    <div class="block lg:hidden mt-5 px-1 sm:px-0">
     <div class="bg-white/95 backdrop-blur-xl rounded-2xl shadow-[0_15px_35px_rgba(0,0,0,0.08)] border border-white/80 overflow-hidden">
 
         <div class="grid grid-cols-2 sm:grid-cols-4">
@@ -945,14 +595,6 @@ content="Looking for the best dentist in Varanasi? Rastogi Dental Clinic offers 
 
     </div>
 </div>
-        <!-- Bottom Ambient Wavy Graphic masking section seams -->
-        <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-20 pointer-events-none hidden lg:block">
-            <svg class="relative block w-full h-[20px] sm:h-[30px] md:h-[40px]" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118,130.83,121.72,194.2,109.8,237.5,101.6,279.7,80.1,321.39,56.44Z" fill="#d1fae5"></path>
-            </svg>
-        </div>
-    </section>
-    
     <!-- Statistics Counter Grid Section -->
     <div class="relative z-20 pb-16 pt-8 bg-transparent">
         <div class="container mx-auto px-4 lg:px-8 reveal">
@@ -1115,7 +757,7 @@ content="Looking for the best dentist in Varanasi? Rastogi Dental Clinic offers 
                 <!-- Dr. Vipul -->
                 <div class="glass-card rounded-3xl overflow-hidden flex flex-col sm:flex-row reveal relative z-10">
                     <div class="sm:w-2/5 h-64 sm:h-auto relative shrink-0">
-                        <img src="images/28v.png" alt="Dr. Vipul Rastogi - RASTOGI DENTAL CLINIC" class="w-full h-full object-cover">
+                        <img loading="lazy" src="images/28v.webp" alt="Dr. Vipul Rastogi - RASTOGI DENTAL CLINIC" class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-dark/70 via-transparent to-transparent sm:hidden"></div>
                     </div>
                     <div class="sm:w-3/5 p-6 md:p-8 flex flex-col justify-center">
@@ -1136,7 +778,7 @@ content="Looking for the best dentist in Varanasi? Rastogi Dental Clinic offers 
                 <!-- Dr. Tripti -->
                 <div class="glass-card rounded-3xl overflow-hidden flex flex-col sm:flex-row reveal relative z-10">
                     <div class="sm:w-2/5 h-64 sm:h-auto relative shrink-0">
-                        <img src="images/trip.png" alt="Dr. Tripti Rastogi - RASTOGI DENTAL CLINIC" class="w-full h-full object-cover">
+                        <img loading="lazy" src="images/trip.webp" alt="Dr. Tripti Rastogi - RASTOGI DENTAL CLINIC" class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-dark/70 via-transparent to-transparent sm:hidden"></div>
                     </div>
                     <div class="sm:w-3/5 p-6 md:p-8 flex flex-col justify-center">
@@ -1168,10 +810,10 @@ content="Looking for the best dentist in Varanasi? Rastogi Dental Clinic offers 
                             <!-- Infinite Automated 1-second auto-marquee slider for Varanasi Gallery -->
                             <div class="marquee-wrapper absolute inset-0">
                                 <div class="marquee-content marquee-content-fast h-full">
-                                    <img src="images/6.png" class="h-full w-auto object-cover" alt="Varanasi Facility 1">
-                                    <img src="images/3.png" class="h-full w-auto object-cover" alt="Varanasi Facility 2">
-                                    <img src="images/4.webp" class="h-full w-auto object-cover" alt="Varanasi Facility 3">
-                                    <img src="images/2.png" class="h-full w-auto object-cover" alt="Varanasi Facility 4">
+                                    <img loading="lazy" src="images/6.webp" class="h-full w-auto object-cover" alt="Varanasi Facility 1">
+                                    <img loading="lazy" src="images/3.webp" class="h-full w-auto object-cover" alt="Varanasi Facility 2">
+                                    <img loading="lazy" src="images/4.webp" class="h-full w-auto object-cover" alt="Varanasi Facility 3">
+                                    <img loading="lazy" src="images/2.webp" class="h-full w-auto object-cover" alt="Varanasi Facility 4">
                                 </div>
                             </div>
                             <div class="absolute inset-0 bg-gradient-to-t from-dark/95 via-dark/40 to-transparent"></div>
@@ -1209,10 +851,10 @@ content="Looking for the best dentist in Varanasi? Rastogi Dental Clinic offers 
                             <!-- Infinite Automated 1-second auto-marquee slider for Chunar Gallery -->
                             <div class="marquee-wrapper absolute inset-0">
                                 <div class="marquee-content marquee-content-fast h-full" style="animation-direction: reverse;">
-                                    <img src="images/12.png" class="h-full w-auto object-cover" alt="Chunar Facility 1">
-                                    <img src="images/11.png" class="h-full w-auto object-cover" alt="Chunar Facility 2">
-                                    <img src="images/16.png" class="h-full w-auto object-cover" alt="Chunar Facility 3">
-                                    <img src="images/20.png" class="h-full w-auto object-cover" alt="Chunar Facility 4">
+                                    <img loading="lazy" src="images/12.webp" class="h-full w-auto object-cover" alt="Chunar Facility 1">
+                                    <img loading="lazy" src="images/11.webp" class="h-full w-auto object-cover" alt="Chunar Facility 2">
+                                    <img loading="lazy" src="images/16.webp" class="h-full w-auto object-cover" alt="Chunar Facility 3">
+                                    <img loading="lazy" src="images/20.webp" class="h-full w-auto object-cover" alt="Chunar Facility 4">
                                 </div>
                             </div>
                             <div class="absolute inset-0 bg-gradient-to-t from-dark/95 via-dark/40 to-transparent"></div>
@@ -1257,7 +899,7 @@ content="Looking for the best dentist in Varanasi? Rastogi Dental Clinic offers 
 
     <div class="video-wrapper">
         <video
-            poster="images/thumbnail.png"
+            poster="images/thumbnail.webp"
             preload="metadata"
             controls
             playsinline>
@@ -1369,7 +1011,7 @@ content="Looking for the best dentist in Varanasi? Rastogi Dental Clinic offers 
                     <h2 class="text-3xl sm:text-4xl md:text-5xl font-sans font-extrabold tracking-tight mt-2 leading-tight text-white">Follow Our Interactions</h2>
                 </div>
                 <div class="flex gap-4">
-                    <a href="https://www.instagram.com/rastogi_dental_clinic_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="w-12 h-12 text-white bg-gradient-to-tr from-yellow-500 via-pink-500 to-purple-600 rounded-full flex items-center justify-center text-xl hover:scale-110 transition-transform shadow-lg shadow-pink-500/20"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/rastogi_dental_clinic_/" target="_blank" class="w-12 h-12 text-white bg-gradient-to-tr from-yellow-500 via-pink-500 to-purple-600 rounded-full flex items-center justify-center text-xl hover:scale-110 transition-transform shadow-lg shadow-pink-500/20"><i class="fa-brands fa-instagram"></i></a>
                     <a href="https://www.facebook.com/p/Rastogi-Dental-Clinic-100064164120026/" target="_blank" class="w-12 h-12 text-white bg-blue-600 rounded-full flex items-center justify-center text-xl hover:scale-110 transition-transform shadow-lg shadow-blue-500/20"><i class="fa-brands fa-facebook-f"></i></a>
                     <a href="https://www.youtube.com/@RastogiDentalclinic-h2" target="_blank" class="w-12 h-12 text-white bg-red-600 rounded-full flex items-center justify-center text-xl hover:scale-110 transition-transform shadow-lg "><i class="fa-brands fa-youtube"></i></a>
                 </div>
@@ -1424,26 +1066,26 @@ content="Looking for the best dentist in Varanasi? Rastogi Dental Clinic offers 
         <!-- Row 1 -->
         <div class="marquee-wrapper mb-4 sm:mb-6 relative z-10">
             <div class="marquee-content marquee-content-fast">
-                <img src="images/1.png" class="rounded-2xl h-[140px] sm:h-[180px] md:h-[220px] w-auto object-cover shadow-xl border-4 border-white" alt="Asset 1">
-                <img src="images/2.png" class="rounded-2xl h-[140px] sm:h-[180px] md:h-[220px] w-auto object-cover shadow-xl border-4 border-white" alt="Asset 2">
-                <img src="images/4.webp" class="rounded-2xl h-[140px] sm:h-[180px] md:h-[220px] w-auto object-cover shadow-xl border-4 border-white" alt="Asset 3">
-                <img src="images/5.webp" class="rounded-2xl h-[140px] sm:h-[180px] md:h-[220px] w-auto object-cover shadow-xl border-4 border-white" alt="Asset 4">
-                <img src="images/14.png" class="rounded-2xl h-[140px] sm:h-[180px] md:h-[220px] w-auto object-cover shadow-xl border-4 border-white" alt="Asset 5">
+                <img loading="lazy" src="images/22.webp"class="rounded-2xl h-[140px] sm:h-[180px] md:h-[220px] w-auto object-cover shadow-xl border-4 border-white" alt="Asset 1">
+                <img loading="lazy" src="images/2.webp" class="rounded-2xl h-[140px] sm:h-[180px] md:h-[220px] w-auto object-cover shadow-xl border-4 border-white" alt="Asset 2">
+                <img loading="lazy" src="images/4.webp" class="rounded-2xl h-[140px] sm:h-[180px] md:h-[220px] w-auto object-cover shadow-xl border-4 border-white" alt="Asset 3">
+                <img loading="lazy" src="images/5.webp" class="rounded-2xl h-[140px] sm:h-[180px] md:h-[220px] w-auto object-cover shadow-xl border-4 border-white" alt="Asset 4">
+                <img loading="lazy" src="images/14.webp" class="rounded-2xl h-[140px] sm:h-[180px] md:h-[220px] w-auto object-cover shadow-xl border-4 border-white" alt="Asset 5">
                 <!-- loop duplicates -->
-                <img src="images/tr.png" class="rounded-2xl h-[140px] sm:h-[180px] md:h-[220px] w-auto object-cover shadow-xl border-4 border-white" alt="Asset 1">
-                <img src="images/15.png" class="rounded-2xl h-[140px] sm:h-[180px] md:h-[220px] w-auto object-cover shadow-xl border-4 border-white" alt="Asset 2">
+                <img loading="lazy" src="images/tr.webp" class="rounded-2xl h-[140px] sm:h-[180px] md:h-[220px] w-auto object-cover shadow-xl border-4 border-white" alt="Asset 1">
+                <img loading="lazy" src="images/15.webp" class="rounded-2xl h-[140px] sm:h-[180px] md:h-[220px] w-auto object-cover shadow-xl border-4 border-white" alt="Asset 2">
             </div>
         </div>
         <!-- Row 2 -->
         <div class="marquee-wrapper marquee-wrapper-reverse relative z-10">
             <div class="marquee-content">
-                <img src="images/6.png" class="rounded-2xl h-[140px] sm:h-[180px] md:h-[220px] w-auto object-cover shadow-xl border-4 border-white" alt="Asset 6">
-                <img src="images/11.png" class="rounded-2xl h-[140px] sm:h-[180px] md:h-[220px] w-auto object-cover shadow-xl border-4 border-white" alt="Asset 7">
-                <img src="images/16.png" class="rounded-2xl h-[140px] sm:h-[180px] md:h-[220px] w-auto object-cover shadow-xl border-4 border-white" alt="Asset 8">
-                <img src="images/12.png" class="rounded-2xl h-[140px] sm:h-[180px] md:h-[220px] w-auto object-cover shadow-xl border-4 border-white" alt="Asset 9">
+                <img loading="lazy" src="images/6.webp" class="rounded-2xl h-[140px] sm:h-[180px] md:h-[220px] w-auto object-cover shadow-xl border-4 border-white" alt="Asset 6">
+                <img loading="lazy" src="images/11.webp" class="rounded-2xl h-[140px] sm:h-[180px] md:h-[220px] w-auto object-cover shadow-xl border-4 border-white" alt="Asset 7">
+                <img loading="lazy" src="images/16.webp" class="rounded-2xl h-[140px] sm:h-[180px] md:h-[220px] w-auto object-cover shadow-xl border-4 border-white" alt="Asset 8">
+                <img loading="lazy" src="images/12.webp" class="rounded-2xl h-[140px] sm:h-[180px] md:h-[220px] w-auto object-cover shadow-xl border-4 border-white" alt="Asset 9">
                 <!-- loop duplicates -->
-                <img src="images/7.png" class="rounded-2xl h-[140px] sm:h-[180px] md:h-[220px] w-auto object-cover shadow-xl border-4 border-white" alt="Asset 6">
-                <img src="images/19.png" class="rounded-2xl h-[140px] sm:h-[180px] md:h-[220px] w-auto object-cover shadow-xl border-4 border-white" alt="Asset 7">
+                <img loading="lazy" src="images/7.webp" class="rounded-2xl h-[140px] sm:h-[180px] md:h-[220px] w-auto object-cover shadow-xl border-4 border-white" alt="Asset 6">
+                <img loading="lazy" src="images/19.webp" class="rounded-2xl h-[140px] sm:h-[180px] md:h-[220px] w-auto object-cover shadow-xl border-4 border-white" alt="Asset 7">
             </div>
         </div>
     </section>
@@ -1458,6 +1100,36 @@ content="Looking for the best dentist in Varanasi? Rastogi Dental Clinic offers 
 
             <div class="space-y-4 md:space-y-6 reveal">
                 <!-- Q1 -->
+                 <details class="group glass-card rounded-3xl overflow-hidden shadow-xl [&_summary::-webkit-details-marker]:hidden relative z-10">
+                    <summary class="flex cursor-pointer items-center justify-between gap-4 p-5 md:p-6 text-slate-900 font-extrabold text-sm sm:text-base md:text-lg hover:text-emerald-700 transition-colors">
+                        Which areas in Varanasi do you serve?
+                        <span class="shrink-0 rounded-full bg-emerald-100 border border-emerald-200 p-2 sm:p-3 text-emerald-700 shadow-sm group-open:-rotate-180 transition-transform duration-300"><i class="fa-solid fa-chevron-down text-xs sm:text-sm"></i></span>
+                    </summary>
+                    <div class="px-5 md:px-6 pb-5 md:pb-6 text-slate-700 font-medium text-xs sm:text-sm md:text-base leading-relaxed border-t border-emerald-100/50 pt-4 md:pt-5">
+                        Dental Treatments done at <strong class="text-slate-900 uppercase font-sans font-bold tracking-widest text-[10px] sm:text-[11px]">RASTOGI DENTAL CLINIC</strong> serves patients across Varanasi, including BHU, Lanka, Sundarpur, Bhullanpur, Bhikharipur, Kanchanpur, Chunar Road, Akhari, Mahmoorganj, Sigra, Kakarmatta, Nagwa, Naria, Bhelupur, Ravindrapuri, DLW, and nearby neighborhoods. We are committed to providing advanced, affordable, and patient-focused dental care for individuals and families throughout the city.
+                    </div>
+                </details>
+                <details class="group glass-card rounded-3xl overflow-hidden shadow-xl [&_summary::-webkit-details-marker]:hidden relative z-10">
+                    <summary class="flex cursor-pointer items-center justify-between gap-4 p-5 md:p-6 text-slate-900 font-extrabold text-sm sm:text-base md:text-lg hover:text-emerald-700 transition-colors">
+                        What dental treatments do you offer for patients in western Varanasi?
+                        <span class="shrink-0 rounded-full bg-emerald-100 border border-emerald-200 p-2 sm:p-3 text-emerald-700 shadow-sm group-open:-rotate-180 transition-transform duration-300"><i class="fa-solid fa-chevron-down text-xs sm:text-sm"></i></span>
+                    </summary>
+                    <div class="px-5 md:px-6 pb-5 md:pb-6 text-slate-700 font-medium text-xs sm:text-sm md:text-base leading-relaxed border-t border-emerald-100/50 pt-4 md:pt-5">
+                        Dental Treatments done at <strong class="text-slate-900 uppercase font-sans font-bold tracking-widest text-[10px] sm:text-[11px]">RASTOGI DENTAL CLINIC</strong> offer comprehensive dental care for patients from BHU, Lanka, Sundarpur, Bhullanpur, Bhikharipur, Kanchanpur, Chunar Road, Akhari, Ravindrapuri
+Naria, Nagwa with facilities like:
+
+Root Canal Treatment
+Dental Implants
+Teeth Whitening
+Braces & Clear Aligners
+Smile Designing
+Pediatric Dentistry
+Crowns & Bridges
+Tooth Extractions
+Full Mouth Rehabilitation throughout the city.
+                    </div>
+                </details>
+
                 <details class="group glass-card rounded-3xl overflow-hidden shadow-xl [&_summary::-webkit-details-marker]:hidden relative z-10">
                     <summary class="flex cursor-pointer items-center justify-between gap-4 p-5 md:p-6 text-slate-900 font-extrabold text-sm sm:text-base md:text-lg hover:text-emerald-700 transition-colors">
                         Is Root Canal Treatment (RCT) painful?
@@ -1633,7 +1305,7 @@ content="Looking for the best dentist in Varanasi? Rastogi Dental Clinic offers 
                 <!-- Branding column -->
                 <div class="sm:col-span-2 lg:col-span-1">
                     <a href="#" class="flex flex-nowrap items-center gap-2 sm:gap-3 mb-6 group w-max decoration-none outline-none focus:ring-2 focus:ring-emerald-500 rounded-xl p-1">
-                        <img src="images/logoo.png" alt="RASTOGI DENTAL CLINIC Footer Logo" class="h-9 w-9 sm:h-10 sm:w-10 md:h-12 md:w-12 rounded-xl shadow-lg border border-emerald-800 object-cover shrink-0 transition-transform group-hover:scale-105">
+                        <img loading="lazy" src="images/logoo.webp" alt="RASTOGI DENTAL CLINIC Footer Logo" class="h-9 w-9 sm:h-10 sm:w-10 md:h-12 md:w-12 rounded-xl shadow-lg border border-emerald-800 object-cover shrink-0 transition-transform group-hover:scale-105">
                         <span class="text-[11px] sm:text-[13px] md:text-lg lg:text-xl font-serif font-black tracking-widest text-white uppercase whitespace-nowrap transition-colors duration-300 group-hover:text-emerald-400 leading-none mt-1">
                             RASTOGI DENTAL
                         </span>
@@ -1753,571 +1425,7 @@ content="Looking for the best dentist in Varanasi? Rastogi Dental Clinic offers 
     </div>
 
     <!-- Operations Core JS Engine -->
-    <script>
-        // Preloader transition & Boot Particle Engine
-           // Preloader transition & Boot Particle Engine
-    window.addEventListener('load', () => {
-    setTimeout(() => {
-        const preloader = document.getElementById('preloader');
-
-        if (preloader) {
-            preloader.style.opacity = '0';
-
-            setTimeout(() => {
-                preloader.style.display = 'none';
-            }, 500);
-        }
-    }, 600);
-
-    initParticles();
-});
-
-const slides = document.querySelectorAll('.hero-slide-right');
-
-if (slides.length > 0) {
-    let current = 0;
-
-    setInterval(() => {
-        slides[current].classList.remove('active');
-        current = (current + 1) % slides.length;
-        slides[current].classList.add('active');
-    }, 3000);
-}
-
-        // Background Dynamic Particles engine (excludes Hero section)
-        function initParticles() {
-           
-
-    const icons = [
-        'fa-tooth',
-        'fa-tooth',
-        'fa-tooth',
-        'fa-tooth',
-        'fa-heart-pulse',
-        'fa-kit-medical',
-        'fa-shield-halved',
-        'fa-user-doctor',
-        'fa-stethoscope',
-        'fa-syringe',
-        'fa-notes-medical',
-        'fa-briefcase-medical',
-        'fa-hospital-user',
-        'fa-bandage',
-        'fa-hand-sparkles',
-        'fa-face-smile',
-        'fa-star-of-life'
-    ];
-
-    const createParticles = (section) => {
-
-        // Don't create twice
-        if (section.querySelector('.particle-container')) return;
-
-        const particleContainer = document.createElement('div');
-        particleContainer.className =
-            'particle-container absolute inset-0 overflow-hidden pointer-events-none z-0';
-
-        // Hero gets more particles
-        const particleCount = section.id === 'home' ? 18 : 10;
-
-        for (let i = 0; i < particleCount; i++) {
-
-            const icon = document.createElement('i');
-
-            const randomIcon =
-                icons[Math.floor(Math.random() * icons.length)];
-
-            icon.className =
-                `fa-solid ${randomIcon} text-emerald-600/10 absolute`;
-
-            icon.style.fontSize =
-                `${Math.random() * 14 + 12}px`;
-
-            icon.style.left =
-                `${Math.random() * 100}%`;
-
-            icon.style.top =
-                `${Math.random() * 100}%`;
-
-            icon.style.animation =
-                `${Math.random() > 0.5 ? 'float-particle-1' : 'float-particle-2'}
-                 ${15 + Math.random() * 15}s
-                 infinite ease-in-out`;
-
-            icon.style.animationDelay =
-                `${-Math.random() * 20}s`;
-
-            particleContainer.appendChild(icon);
-        }
-
-        section.insertBefore(
-            particleContainer,
-            section.firstChild
-        );
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-
-        entries.forEach(entry => {
-
-            if (entry.isIntersecting) {
-
-                createParticles(entry.target);
-
-                // Stop observing once particles are created
-                observer.unobserve(entry.target);
-
-            }
-
-        });
-
-    }, {
-        root: null,
-        threshold: 0.15
-    });
-
-    document.querySelectorAll('section').forEach(section => {
-        observer.observe(section);
-    });
-
-
-        }
-
-
-        // Sticky Nav shadow toggler & Scroll Progress Indicator calculation
-        // Scrolling dynamics (Navbar + Back To Top)
-        window.onscroll = function() {
-            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            let scrolled = (winScroll / height) * 100;
-            // document.getElementById("myBar").style.width = scrolled + "%";
-
-            const navbar = document.getElementById('navbar');
-            const btt = document.getElementById('backToTop');
-            
-            if (winScroll > 40) {
-                navbar.classList.add('shadow-xl', 'from-blue-950', 'to-sky-900', 'backdrop-blur-md');
-                navbar.classList.remove('from-blue-900', 'to-sky-800', 'border-blue-700');
-                btt.classList.remove('opacity-0', 'translate-y-10');
-                btt.classList.add('opacity-100', 'translate-y-0');
-            } else {
-                navbar.classList.remove('shadow-xl', 'from-blue-950', 'to-sky-900', 'backdrop-blur-md');
-                navbar.classList.add('from-blue-900', 'to-sky-800', 'border-blue-700');
-                btt.classList.add('opacity-0', 'translate-y-10');
-                btt.classList.remove('opacity-100', 'translate-y-0');
-            }
-        };
-
-        // Mobile Menu toggles
-        const menuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const menuIcon = document.getElementById('menu-icon');
-        const mobileLinks = document.querySelectorAll('.mobile-link');
-
-        function toggleMenu() {
-            mobileMenu.classList.toggle('hidden');
-            if(mobileMenu.classList.contains('hidden')) {
-                menuIcon.classList.replace('fa-xmark', 'fa-bars-staggered');
-            } else {
-                menuIcon.classList.replace('fa-bars-staggered', 'fa-xmark');
-            }
-        }
-
-        menuBtn.addEventListener('click', toggleMenu);
-        mobileLinks.forEach(link => { 
-            link.addEventListener('click', () => { 
-                mobileMenu.classList.add('hidden'); 
-                menuIcon.classList.replace('fa-xmark', 'fa-bars-staggered');
-            }); 
-        });
-
-        
-        // Dedicated Hero Right-Side Image Slider
-        const slidesRight = document.querySelectorAll('.hero-slide-right');
-        const dotsRight = document.querySelectorAll('.hero-dot-right');
-        let currentSlideRight = 0;
-        let slideIntervalRight;
-
-        function showSlideRight(index) {
-            if(!slidesRight.length) return;
-            slidesRight.forEach(s => s.classList.remove('active'));
-            dotsRight.forEach(d => {
-                d.className = 'w-2 h-2 rounded-full bg-slate-300 hover:bg-emerald-400 transition-all hero-dot-right cursor-pointer shadow-sm';
-            });
-            
-            slidesRight[index].classList.add('active');
-            if(dotsRight[index]) {
-                dotsRight[index].className = 'w-6 h-2 rounded-full bg-emerald-500 transition-all hero-dot-right cursor-pointer shadow-sm';
-            }
-            currentSlideRight = index;
-        }
-
-        function nextSlideRight() { showSlideRight((currentSlideRight + 1) % slidesRight.length); }
-
-        if(slidesRight.length > 0) {
-            slideIntervalRight = setInterval(nextSlideRight, 3000); // 5 second relaxed pace
-            dotsRight.forEach((dot, index) => {
-                dot.addEventListener('click', () => {
-                    clearInterval(slideIntervalRight);
-                    showSlideRight(index);
-                    slideIntervalRight = setInterval(nextSlideRight, 3000);
-                });
-            });
-        }
-
-
-        // Scroll reveal trigger check
-        function checkScrollReveal() {
-            let reveals = document.querySelectorAll(".reveal");
-            for (let i = 0; i < reveals.length; i++) {
-                let windowHeight = window.innerHeight;
-                let elementTop = reveals[i].getBoundingClientRect().top;
-                if (elementTop < windowHeight - 40) { reveals[i].classList.add("active"); }
-            }
-        }
-        window.addEventListener("scroll", checkScrollReveal);
-        checkScrollReveal();
-
-        // Stats Counters Animation Setup
-        const counters = document.querySelectorAll('.counter');
-        if('IntersectionObserver' in window) {
-            const counterObserver = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if(entry.isIntersecting) {
-                        const counter = entry.target;
-                        const target = +counter.getAttribute('data-target');
-                        const stepValue = target / 100; 
-                        
-                        const iterate = () => {
-                            const current = +counter.innerText;
-                            if(current < target) {
-                                counter.innerText = Math.ceil(current + stepValue);
-                                setTimeout(iterate, 20);
-                            } else { counter.innerText = target; }
-                        };
-                        iterate();
-                        observer.unobserve(counter);
-                    }
-                });
-            }, { threshold: 0.5 });
-            counters.forEach(c => counterObserver.observe(c));
-        }
-
-        // Testimonials Feedback Dataset configuration
-        const reviewsDataset = [
-            { name: "Jaya Rani", text: "RASTOGI DENTAL CLINIC offers excellent service with modern facilities. The staff is friendly, and hygiene is top-notch. I can confidently say it’s the best dental clinic in Varanasi. Anyone searching for a good dental clinic in Varanasi should visit here.", time: "6 months ago" },
-            { name: "Mahi Sagar", text: "Painless, affordable, and effective treatments—RASTOGI DENTAL CLINIC is the best dental clinic in Varanasi.", time: "6 months ago" },
-            { name: "Rajat Pal", text: "RASTOGI DENTAL CLINIC is the best dental clinic in Varanasi—professional, clean, and highly reliable.", time: "6 months ago" },
-            { name: "shashi shankar patel", text: "If you want quality treatment, RASTOGI DENTAL CLINIC is the best dental clinic in Varanasi.", time: "6 months ago" },
-            { name: "Ayushi Gupta", text: "The best dental care I have ever experienced! Professional, courteous, and friendly staff…and cleanliness is maintained at its best. would highly recommend to anyone", time: "4 years ago" },
-            { name: "Komal Singh", text: "One of the best dental clinic in whole area. Friendly staff & doctor. Best treatments along with affordable price.", time: "5 years ago" },
-            { name: "Deepika Yadav", text: "Best dental clinic in our district and doctor vipul also a good person", time: "3 years ago" },
-            { name: "Rohit Kumar", text: "Really affordable clinic. They have a lot of experience about dental procedures.", time: "5 years ago" },
-            { name: "Dr.Amit Chauhan", text: "Very good in all dental procedures and very good behavior.", time: "4 years ago" }
-        ];
-
-        const trackElement = document.getElementById('testimonial-track');
-        if(trackElement) {
-            // Duplicate array natively to establish a seamless continuous loop
-            const loopSet = [...reviewsDataset, ...reviewsDataset];
-
-            loopSet.forEach(item => {
-                const block = document.createElement('div');
-                block.className = "flex-none w-full md:w-1/2 lg:w-1/3 px-3 sm:px-4 py-2";
-                block.innerHTML = `
-                    <div class="glass-card p-6 sm:p-8 rounded-3xl shadow-xl h-full flex flex-col justify-between font-sans transition-transform hover:-translate-y-1 duration-300 relative z-10">
-                        <div>
-                            <div class="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-5">
-                                <div class="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-tr from-emerald-500 to-teal-600 text-white rounded-full flex items-center justify-center font-bold text-sm sm:text-base shadow-md shrink-0">${item.name.charAt(0).toUpperCase()}</div>
-                                <div class="overflow-hidden">
-                                    <h4 class="font-bold text-slate-900 text-sm sm:text-base truncate">${item.name}</h4>
-                                    <p class="text-[10px] sm:text-xs text-slate-600 font-medium mt-0.5">${item.time}</p>
-                                </div>
-                            </div>
-                            <div class="flex text-yellow-500 text-xs sm:text-sm gap-1 mb-4 drop-shadow-sm">
-                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                            </div>
-                            <p class="text-slate-800 font-medium text-xs sm:text-sm italic leading-relaxed">"${item.text}"</p>
-                        </div>
-                        <div class="mt-5 pt-4 border-t border-emerald-200/50 text-[9px] sm:text-[10px] tracking-widest font-bold text-emerald-700 flex items-center gap-1.5 uppercase"><i class="fa-brands fa-google text-blue-600 text-xs sm:text-sm"></i> Verified Review</div>
-                    </div>
-                `;
-                trackElement.appendChild(block);
-            });
-
-            let currentSlideOffset = 0;
-            setInterval(() => {
-                currentSlideOffset++;
-                if (currentSlideOffset > reviewsDataset.length) {
-                    trackElement.style.transition = 'none';
-                    currentSlideOffset = 0;
-                    trackElement.style.transform = `translateX(0)`;
-                    // Force reflow
-                    void trackElement.offsetWidth;
-                    setTimeout(() => {
-                        trackElement.style.transition = 'transform 0.6s cubic-bezier(0.4, 0, 0.2, 1)';
-                        currentSlideOffset++;
-                        let countToShow = window.innerWidth >= 1024 ? 3 : window.innerWidth >= 768 ? 2 : 1;
-                        trackElement.style.transform = `translateX(-${currentSlideOffset * (100 / countToShow)}%)`;
-                    }, 50);
-                } else {
-                    let countToShow = window.innerWidth >= 1024 ? 3 : window.innerWidth >= 768 ? 2 : 1;
-                    trackElement.style.transform = `translateX(-${currentSlideOffset * (100 / countToShow)}%)`;
-                }
-            }, 3500);
-        }
-
-        // Custom notification trigger mechanism replacing old alert() loops
-        function showToastMessage(msg) {
-            const toast = document.getElementById('custom-toast');
-            const text = document.getElementById('custom-toast-message');
-            text.innerText = msg;
-            toast.classList.add('show');
-            setTimeout(() => {
-                toast.classList.remove('show');
-            }, 3500);
-        }
-
-        // Clip text clipboard routing helper
-        function copyToClipboard(text) {
-            if (navigator.clipboard && window.isSecureContext) {
-                navigator.clipboard.writeText(text).then(() => {
-                    showToastMessage("UPI ID copied successfully to clipboard!");
-                });
-            } else {
-                // Fallback for older browsers or non-secure contexts
-                const tempInput = document.createElement("input");
-                tempInput.value = text;
-                document.body.appendChild(tempInput);
-                tempInput.select();
-                try {
-                    document.execCommand("copy");
-                    showToastMessage("UPI ID copied successfully to clipboard!");
-                } catch (err) {
-                    console.error('Fallback: Oops, unable to copy', err);
-                }
-                document.body.removeChild(tempInput);
-            }
-        }
-
-        // Dynamic UPI Generation Logic
-        function generateUPI() {
-            const amountInput = document.getElementById('upi-amount').value;
-            const upiID = "rastogidental@upi"; 
-            const businessName = "RASTOGI DENTAL CLINIC";
-
-            if (!amountInput || amountInput <= 0) {
-                showToastMessage("Please enter a valid amount.");
-                return;
-            }
-
-            // Create the standard UPI Intent URL
-            const upiString = `upi://pay?pa=${upiID}&pn=${encodeURIComponent(businessName)}&am=${amountInput}&cu=INR`;
-
-            // 1. Hide Generate button, show the Payment Options container
-            document.getElementById('generate-btn').style.display = 'none';
-            const paymentOptions = document.getElementById('payment-options');
-            paymentOptions.classList.remove('hidden');
-            paymentOptions.classList.add('block');
-
-            // 2. Generate and set the QR Code
-            const qrImage = document.getElementById('upi-qr');
-            qrImage.src = `https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=${encodeURIComponent(upiString)}`;
-
-            // 3. Set the Direct App Link
-            const payLink = document.getElementById('upi-link');
-            payLink.href = upiString;
-            
-            showToastMessage("Payment gateway generated successfully!");
-        }
-
-        // WhatsApp Form API Routing
-        function routeWhatsApp(num, label) {
-            const name = document.getElementById('waName').value.trim();
-            const phone = document.getElementById('waPhone').value.trim();
-            const date = document.getElementById('waDate').value;
-            const selection = document.getElementById('waType').value;
-            const history = document.getElementById('waMessage').value.trim();
-
-            if (!name || !phone || !date || !history) {
-                showToastMessage("Please fill in all mandatory inputs (*) inside the booking form.");
-                return;
-            }
-
-            const cleanString = `Hello RASTOGI DENTAL CLINIC (${label} Branch Queue Request),%0A%0A*PATIENT DATA:*%0A- Full Name: ${encodeURIComponent(name)}%0A- Contact Phone: ${encodeURIComponent(phone)}%0A- Requested Date: ${encodeURIComponent(date)}%0A- Procedure: ${encodeURIComponent(selection)}%0A%0A*CASE SUMMARY:*%0A${encodeURIComponent(history)}`;
-            window.open(`https://wa.me/91${num}?text=${cleanString}`, '_blank');
-        }
-
-        // Webhook dispatcher logic
-        function triggerWebhookDispatch() {
-            const payload = {
-                clinic: "RASTOGI DENTAL CLINIC",
-                name: document.getElementById('waName').value,
-                phone: document.getElementById('waPhone').value,
-                email: document.getElementById('waEmail').value,
-                date: document.getElementById('waDate').value,
-                procedure: document.getElementById('waType').value,
-                notes: document.getElementById('waMessage').value,
-                timestamp: new Date().toISOString()
-            };
-
-            fetch('WEBHOOK_URL_PLACEHOLDER', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(payload)
-            }).then(() => {
-                showToastMessage("Intake logged. Select Varanasi or Chunar to route to WhatsApp.");
-            }).catch(() => {
-                console.warn("Direct backup webhook channel currently unlinked. Procedural execution falls back to WhatsApp routing.");
-            });
-        }
-
-        // Advanced AI Chatbot Knowledge Engine Configuration
-        const chatToggle = document.getElementById('chatToggle');
-        const chatWin = document.getElementById('chatbot-window');
-        const chatClose = document.getElementById('chatClose');
-        const chatInput = document.getElementById('chatInput');
-        const chatSend = document.getElementById('chatSend');
-        const chatBody = document.getElementById('chatBody');
-
-        chatToggle.addEventListener('click', () => { 
-            chatWin.classList.add('open'); 
-            chatToggle.style.opacity = '0';
-            setTimeout(() => { chatToggle.style.display = 'none'; }, 300);
-            setTimeout(() => { chatInput.focus(); }, 400);
-        });
-        
-        chatClose.addEventListener('click', () => { 
-            chatWin.classList.remove('open'); 
-            chatToggle.style.display = 'flex';
-            setTimeout(() => { chatToggle.style.opacity = '1'; }, 50);
-        });
-
-        // Advanced Multi-Keyword Search Array
-        const knowledgeBase = [
-            {
-                keywords: ["time", "timing", "hour", "open", "close", "when", "sunday", "schedule", "opd", "days"],
-                answer: "Our consultation hours for both branches are: Monday to Saturday from 10:00 AM – 2:00 PM and 5:00 PM – 7:00 PM. On Sundays, we are open for Morning OPD from 10:00 AM – 1:00 PM."
-            },
-            {
-                keywords: ["location", "address", "where", "branch", "varanasi", "chunar", "map", "situated", "direction", "reach", "clinic"],
-                answer: "We proudly operate two advanced branches. Varanasi Branch: 1st Floor, Kanchanpur Gate, Chunar Road, Bhikharipur (+91 7080853206). Chunar Branch: Rastogi Katara, Sarafa Bazaar Chowk, Chunar (+91 9839913206)."
-            },
-            {
-                keywords: ["contact", "phone", "number", "call", "appointment", "book", "schedule", "mobile", "whatsapp", "reach"],
-                answer: "To book an appointment or for inquiries, please call Varanasi: +91 7080853206 or Chunar: +91 9839913206. You can also securely use the WhatsApp booking form located in our Contact section."
-            },
-            {
-                keywords: ["emergency", "urgent", "pain", "trauma", "bleeding", "toothache", "hurt", "broken"],
-                answer: "For immediate emergency support, call RASTOGI DENTAL CLINIC directly at +91 7080853206 (Varanasi) or +91 9839913206 (Chunar). Our trauma team provides 24/7 priority emergency care."
-            },
-            {
-                keywords: ["doctor", "specialist", "who", "dentist", "experience", "staff", "team", "expert"],
-                answer: "Our principal experts are Dr. Vipul Rastogi (BDS, FAGE) and Dr. Tripti Rastogi (BDS, FAGE). Both are highly experienced specialists dedicated to providing top-tier, painless dental care."
-            },
-            {
-                keywords: ["dr vipul", "vipul rastogi", "vipul"],
-                answer: "Dr. Vipul Rastogi (BDS, FAGE) brings 17+ years of clinical expertise. He is a former observer at IMS BHU and a Life Member of the Indian Dental Association."
-            },
-            {
-                keywords: ["dr tripti", "tripti rastogi", "tripti"],
-                answer: "Dr. Tripti Rastogi (BDS, FAGE) is a highly skilled member of the Indian Dental Association. She focuses specifically on preventive, restorative, and compassionate family pediatric care."
-            },
-            {
-                keywords: ["rct", "root canal", "painful", "endodontics", "nerve"],
-                answer: "Modern Root Canal Treatments (RCT) at our clinic are virtually painless! We use advanced mechanical rotary systems and optimized local anesthesia for absolute comfort, often completed in a single sitting."
-            },
-            {
-                keywords: ["implant", "screw", "titanium", "missing teeth", "replacement", "missing", "fake teeth"],
-                answer: "We offer advanced bio-compatible titanium Dental Implants. They are completely safe, highly predictable, long-lasting, and structurally secure for permanently replacing missing teeth."
-            },
-            {
-                keywords: ["braces", "aligner", "wire", "orthodontic", "crooked", "straighten", "invisalign", "teeth gap"],
-                answer: "We provide comprehensive orthodontics to perfectly straighten your teeth, including traditional Metal Braces, cosmetic Ceramic Braces, and Advanced Clear Aligners."
-            },
-            {
-                keywords: ["whitening", "cosmetic", "smile", "veneer", "laminate", "yellow", "stain", "bleaching"],
-                answer: "We offer premium Cosmetic Dentistry, including Professional Teeth Whitening, Complete Smile Designing, and Dental Veneers/Laminates to give you a flawless, bright smile."
-            },
-            {
-                keywords: ["crown", "bridge", "denture", "filling", "cap", "rehabilitation", "broken tooth"],
-                answer: "We provide high-quality Restorative Dentistry, including Ceramic Dental Crowns (Caps), Fixed Bridges, Complete/Removable Dentures, Tooth-colored Fillings, and Full Mouth Rehabilitation."
-            },
-            {
-                keywords: ["kid", "child", "pediatric", "children", "baby"],
-                answer: "Our Pediatric Dentistry wing includes preventive care for children, interceptive orthodontics, sports mouth guards, and gentle sealants performed in a child-friendly, anxiety-free environment."
-            },
-            {
-                keywords: ["clean", "scaling", "gum", "polishing", "bad breath", "plaque", "tartar", "smell", "bleeding gum"],
-                answer: "We perform professional Dental Scaling and Polishing to treat gum disease, remove hard plaque/tartar buildup, cure bad breath, and ensure optimal oral hygiene."
-            },
-            {
-                keywords: ["extract", "remove", "surgery", "wisdom", "pull"],
-                answer: "We perform highly secure, painless surgical dental extractions, including complex wisdom teeth removal, strictly under optimized local anesthesia."
-            },
-            {
-                keywords: ["cost", "price", "fee", "pay", "upi", "expensive", "charge", "afford", "amount"],
-                answer: "We offer highly premium treatments at competitive, transparent, and affordable pricing for all budgets. You can pay securely via our clinic UPI ID: rastogidental@upi."
-            },
-            {
-                keywords: ["about", "iso", "trust", "why", "mission", "vision", "hygiene", "sterilization", "safe", "cleanliness"],
-                answer: "RASTOGI DENTAL CLINIC is an ISO 9001:2015 certified institution with 17+ years of experience and thousands of happy patients. We ensure strict multi-stage autoclave sterilization for 100% surgical safety."
-            },
-            {
-                keywords: ["review", "instagram", "facebook", "social", "rating", "patient"],
-                answer: "We hold a 4.9/5 star average rating from our satisfied patients! Connect with us on Instagram and Facebook to view real clinical results and treatment videos."
-            },
-            {
-                keywords: ["service", "treatment", "offer", "do you do", "provide", "help"],
-                answer: "Under one roof, we provide: RCT, Implants, Braces/Aligners, Teeth Whitening, Crowns/Bridges, Pediatric Care, Gum Treatments, Extractions, and 24/7 Emergency Dental Care."
-            },
-            {
-                keywords: ["hello", "hi", "hey", "good morning", "good evening", "greetings"],
-                answer: "Hello! Welcome to the RASTOGI DENTAL CLINIC interactive assistant. How can I help guide your clinical needs today?"
-            },
-            {
-                keywords: ["thanks", "thank you", "ok", "okay", "great", "awesome"],
-                answer: "You are most welcome! RASTOGI DENTAL CLINIC is proud to partner in your oral health journey. Have a great day!"
-            }
-        ];
-
-        const fallbackResponse = "Thank you for reaching out to RASTOGI DENTAL CLINIC. For specific clinical diagnosis or to secure an appointment, please use the booking forms below to connect directly with our medical team over WhatsApp.";
-
-        function sendChatInput() {
-            const queryText = chatInput.value.trim().toLowerCase();
-            if (!queryText) return;
-
-            // Generate user message bubble
-            const userMsg = document.createElement('div');
-            userMsg.className = "chat-msg p-3 sm:p-3.5 rounded-2xl shadow-md max-w-[90%] text-xs sm:text-sm self-end bg-emerald-600 text-white rounded-tr-sm font-medium";
-            userMsg.innerText = chatInput.value;
-            chatBody.appendChild(userMsg);
-            chatInput.value = '';
-            chatBody.scrollTop = chatBody.scrollHeight;
-
-            // Advanced Array Matching Engine
-            setTimeout(() => {
-                let responseText = fallbackResponse;
-                
-                // Scan the knowledge base array for the first matching keyword
-                for (let entry of knowledgeBase) {
-                    // If the user's sentence includes ANY of the keywords in this entry's array
-                    if (entry.keywords.some(kw => queryText.includes(kw))) {
-                        responseText = entry.answer;
-                        break;
-                    }
-                }
-                
-                const botMsg = document.createElement('div');
-                botMsg.className = "chat-msg p-3 sm:p-3.5 rounded-2xl shadow-md max-w-[90%] text-xs sm:text-sm self-start bg-white border border-emerald-100 text-slate-800 font-medium rounded-tl-sm leading-relaxed";
-                botMsg.innerHTML = responseText;
-                chatBody.appendChild(botMsg);
-                chatBody.scrollTop = chatBody.scrollHeight;
-            }, 600);
-        }
-
-        chatSend.addEventListener('click', sendChatInput);
-        chatInput.addEventListener('keypress', (e) => { if (e.key === 'Enter') sendChatInput(); });
-    </script>
+    
+    <script src="assets/js/script.js" defer></script>
 </body>
 </html>
